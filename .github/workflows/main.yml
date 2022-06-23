@@ -18,6 +18,6 @@ jobs:
     steps:
       - uses: docker://pandoc/core:2-ubuntu
         with:
-          args: "--help" # gets appended to pandoc command
+          args: "-t gfm --extract-media=. ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md" # gets appended to pandoc command
 
 #  pandoc -t gfm --extract-media=. ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md
