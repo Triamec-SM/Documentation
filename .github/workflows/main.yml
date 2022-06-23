@@ -25,8 +25,10 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: upload result
+      - name: result
         uses: actions/upload-artifact@v3
+        with:
+          path: ServoDrive-SetupGuide_trial.md
 
           
 #  pandoc -t gfm --extract-media=. ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md
