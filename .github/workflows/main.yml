@@ -16,8 +16,16 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - uses: docker://pandoc/core:2-ubuntu
+      - name: checkout repo
+        uses: actions/checkout@v3
+      - name: convert
+        uses: docker://pandoc/core:2-ubuntu
         with:
           args: "-t gfm --extract-media=. ./ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md" # gets appended to pandoc command
-
+      - name: upload result
+        uses: actions/upload-artifact@v3
+        with:
+          name: result
+          path: result
+          
 #  pandoc -t gfm --extract-media=. ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md
