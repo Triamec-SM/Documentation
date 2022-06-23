@@ -22,10 +22,11 @@ jobs:
         uses: docker://pandoc/core:2-ubuntu
         with:
           args: "-t gfm --extract-media=. ./ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md" # gets appended to pandoc command
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - name: upload result
         uses: actions/upload-artifact@v3
-        with:
-          name: result
-          path: result
+
           
 #  pandoc -t gfm --extract-media=. ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md
