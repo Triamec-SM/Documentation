@@ -30,7 +30,7 @@ jobs:
         run: |
           rm -r gitbook/Pictures
           mv ServoDrive-SetupGuide_trial.md gitbook/
-          mv Pictures gitbook/
+          sudo mv Pictures gitbook/
       - name: result
         uses: actions/upload-artifact@v3
         with:
