@@ -1,34 +1,23 @@
 This user guide describes how to set up the **TSD and TSP** servo drive
 series.
 
-# <span id="anchor"></span>Abbreviations
+# 
 
-|         |                                       |
-|---------|---------------------------------------|
-| AC      | Alternating Current                   |
-| DC      | Direct Current                        |
-| HMI     | Human-Machine Interface               |
-| LED     | Light Emitting Diode                  |
-| PC      | Personal Computer                     |
-| STO     | Safe Torque Off                       |
-| TAM     | Triamec Advanced Motion               |
-| TAM API | TAM Application Programming Interface |
-
-# <span id="anchor-1"></span>Introduction
+# <span id="anchor"></span>Introduction
 
 This user guide describes how to set up the **T**SD** and **TSP** servo
 drive series.
 
 After a short description of the required hardware and software setup in
-chapter [2](#anchor-2), the user guide explains the usage of the **TAM
-System Explorer** software in chapter [3](#anchor-3) and [4](#anchor-4).
-**Chapter [5](#anchor-5) describes the commissioning and tuning of a
-servo axis.** Chapter [6](#anchor-6) handles several advanced topics and
-chapter [7](#anchor-7) explains the **Tria-Link** observer.
+chapter [3](#anchor-1), the user guide explains the usage of the **TAM
+System Explorer** software in chapter [4](#anchor-2) and [5](#anchor-3).
+**Chapter [6](#anchor-4) describes the commissioning and tuning of a
+servo axis.** Chapter [7](#anchor-5) handles several advanced topics and
+chapter [8](#anchor-6) explains the **Tria-Link** observer.
 
 To control Triamec drives with **Beckhoff Twin**CAT**, first setup the
 drives as described in this document. Then proceed to document
-[\[2\]](#anchor-8) for a **Tria-Link** setup, or [\[3\]](#anchor-9) for
+[\[2\]](#anchor-7) for a **Tria-Link** setup, or [\[3\]](#anchor-8) for
 an **EtherCAT **setup.
 
 Names in italics, like **Triamec**, are general keywords. Register names
@@ -38,14 +27,16 @@ indicate a**n** **HMI** item, **i.e.** ******File ****\>**** Open****.
 Keyboard keys are formatted like **Enter**.
 
 This user guide prerequisites the use of a TAM System Explorer version ≥
-7.19 and a drive firmware ≥ 4.15.
+7.19 and a drive firmware ≥ 4.1
 
-# <span id="anchor-2"></span>Hardware and Software Setup
+# Hallo Matthimas
+
+# <span id="anchor-1"></span>Hardware and Software Setup
 
 This chapter describes the hardware prerequisites and the installation
 of the required software used for commissioning of the drive.
 
-## <span id="anchor-10"></span>Hardware Prerequisites
+## <span id="anchor-9"></span>Hardware Prerequisites
 
 For the commissioning of the Triamec drive with this user guide the
 following hardware setup is required.
@@ -56,7 +47,7 @@ following hardware setup is required.
 -   The drive logic is supplied with 24VDC.
 -   Make sure the STO channels are connected correctly to fulfill the
     safety requirements.
--   Connect the drive with the PC (see section [2.1.1](#anchor-11) for
+-   Connect the drive with the PC (see section [3.1.1](#anchor-10) for
     further information).
 
 See also the corresponding hardware manual for further information:
@@ -66,7 +57,7 @@ See also the corresponding hardware manual for further information:
 -   ****o****r ****Help \> Documentation \> Hardware**** in ******TAM
     System Explorer******.****
 
-### <span id="anchor-11"></span>Connecting the drive with the PC
+### <span id="anchor-10"></span>Connecting the drive with the PC
 
 For the commissioning of the drive, the following options are available
 to connect the drive with the PC:
@@ -81,7 +72,7 @@ to connect the drive with the PC:
 
     -   by using a **USB-Tria-Link** adapter module (**TLU**)
     -   or by connecting the **PC** to the adapter card as described in
-        chapter [7](#anchor-7)
+        chapter [8](#anchor-6)
 
 In case a Windows Explorer window opens when the drive is rebooted or
 when USB is connected to the PC, this can be suppressed by changing the
@@ -93,7 +84,7 @@ following Windows settings:
 
 ##### Ethernet
 
--   See document [\[4\]](#anchor-12) on how to set up an **Ethernet**
+-   See document [\[4\]](#anchor-11) on how to set up an **Ethernet**
     connection.
 
 ##### Tria-Link
@@ -120,7 +111,7 @@ following Windows settings:
 -   Remark: **Tria-**L**ink** is *not* supported with **EtherCAT**
     drives.
 
-## <span id="anchor-13"></span>Software Installation
+## <span id="anchor-12"></span>Software Installation
 
 For the commissioning of **Triamec** drives **TAM System Explorer** is
 required. **TAM System Explorer** provides access to the drive
@@ -156,7 +147,7 @@ following steps describe how to run the installation:
 > associated device drivers. In this case all programs accessing Triamec
 > devices may fail.
 
-# <span id="anchor-3"></span>How to use TAM System Explorer
+# <span id="anchor-2"></span>How to use TAM System Explorer
 
 This chapter gives an introduction into the usage of **TAM System
 Explorer**.
@@ -185,7 +176,7 @@ Figure 2: TAM System Explorer after start up. 1: Topology Tree; 2: Axis
 Monitor; 3: Scope Window; 4: Tab Panel</figcaption>
 </figure>
 
-## <span id="anchor-14"></span>Topology Tree
+## <span id="anchor-13"></span>Topology Tree
 
 After an initializing phase, the** **T**opology **T**ree** shows the
 actual hardware content of the system. The **Topology Tree** is built
@@ -204,7 +195,7 @@ out of the following objects:
 | <img src="./Pictures/10000001000000100000001059F8E935C5AB163C.png"                                         
  style="width:0.42cm;height:0.42cm" />                                                                       | Tria-Link              | **Tria-Link** communication channel used to connect the adapter with devices                                                          |
 | <img src="./Pictures/10000001000000100000001030D2D618D9ECE114.png"                                         
- style="width:0.42cm;height:0.42cm" />                                                                       | Tria-Link Observer     | **Tria-Link** communication channel in observer mode (see chapter [7](#anchor-7))                                                     |
+ style="width:0.42cm;height:0.42cm" />                                                                       | Tria-Link Observer     | **Tria-Link** communication channel in observer mode (see chapter [8](#anchor-6))                                                     |
 | <img src="./Pictures/1000000100000010000000103685E167FFEAF347.png"                                         
  style="width:0.423cm;height:0.423cm" />                                                                     | Station                | Addressable node within the link                                                                                                      |
 | <img src="./Pictures/1000000100000010000000109BAE6FE6F7D7B810.png"                                         
@@ -263,14 +254,14 @@ node or a register opens the ****Register****** **tab in the tab panel.
 All registers contained in the selected register node are listed in the
 register panel.
 
-### <span id="anchor-15"></span>Parameters
+### <span id="anchor-14"></span>Parameters
 
 Parameters are used to configure the drive for the intended application,
 e.g. to set up the position controller or the encoder. Typically, a
 parameter value is written when commissioning the drive and remains
 unchanged, except if the system is changed. Parameters can be stored in
 a configuration file on the PC or persisted on the drive (see sections
-[3.5](#anchor-16)).
+[4.5](#anchor-15)).
 
 In the ****Register****** **tab in the tab panel the parameters are
 listed with the following columns:
@@ -344,18 +335,18 @@ In the tab panel signals are listed with the following columns:
 
 All signals are read only.
 
-### <span id="anchor-17"></span>Information
+### <span id="anchor-16"></span>Information
 
 Information registers can be used to document the properties of an axis.
 They do not affect the behavior of the drive in any way. Information
 registers are also stored with the TAM configuration file on the PC or
-persisted on the drive (see sections [3.5](#anchor-16)).
+persisted on the drive (see sections [4.5](#anchor-15)).
 
 ****Note ****The register Axes\[\].Informaton.AxisName is used by the
 axis monitor, the scope and the modules to display the axis
 identification.
 
-## <span id="anchor-18"></span>Axis Monitor
+## <span id="anchor-17"></span>Axis Monitor
 
 Below the **T**opology **T**ree** the axes are listed in the axis
 monitor as a flat list.
@@ -387,11 +378,11 @@ of a DcBusVoltageOutOfRange warning.
 
 The ****Control system overridden**** column shows a slowly blinking 👷
 icon on orange background as long as an axis module is attached (see
-chapter [4.1](#anchor-19)).
+chapter [5.1](#anchor-18)).
 
 The ****A****sy VM**** and ****I****so VM**** columns reflect the states
 of the asynchronous and isochronous **Tama** virtual machines (see
-chapter [3.7](#anchor-20)). Different characters are shown depending on
+chapter [4.7](#anchor-19)). Different characters are shown depending on
 the state.
 
 |           |                                                  |
@@ -424,7 +415,7 @@ The axis monitor also provides two emergency buttons:
 ****Caution**** ****Switching off the power section of a drive during
 motion may damage the mechanical axis.
 
-## <span id="anchor-21"></span><span id="anchor-22"></span>Scope
+## <span id="anchor-20"></span><span id="anchor-21"></span>Scope
 
 The scope is a very powerful tool with a lot of functionalities. It
 allows to plot all register items (signals, parameters, commands) with a
@@ -443,14 +434,14 @@ the two drives are synchronized (e.g. if they use the same link).
 ****.****
 
 Scope settings can be set by opening the scope tab in the tab panel**
-**(see section [3.3.1](#anchor-23)). Controls related to the scope can
+**(see section [4.3.1](#anchor-22)). Controls related to the scope can
 be found either
 
 -   in the scope menu in the main menu bar,
 -   in the scope tool bar
 -   or by opening the context menu with a right click on the scope area.
 
-### <span id="anchor-23"></span>Scope Settings
+### <span id="anchor-22"></span>Scope Settings
 
 To modify the scope settings, click the ****Scope**** tab in the tab
 panel or click the scope area to activate the ****Scope**** tab. At the
@@ -616,9 +607,9 @@ select ****Auto-Save****. When auto-save is active, the repeat icon
 shows a small blue disc symbol . The auto-saved data from the trigger
 events can be accessed from TAM System Explorer by clicking ****File \>
 Open Workspace Folder \> Measurements\autosave\*.csv ****(see also
-[\[1\]](#anchor-24)).
+[\[1\]](#anchor-23)).
 
-### <span id="anchor-25"></span>Zoom and Pan
+### <span id="anchor-24"></span>Zoom and Pan
 
 The scope supports different zoom and pan operations.
 
@@ -647,7 +638,7 @@ related to zooming:
 -   **Reset zoom range:** Resets the min/max range to the default
     values.
 
-### <span id="anchor-26"></span>Saving and Loading Scope Data
+### <span id="anchor-25"></span>Saving and Loading Scope Data
 
 Use the ****Scope**** menu to save and load plot data (Figure ):
 
@@ -656,7 +647,7 @@ Use the ****Scope**** menu to save and load plot data (Figure ):
 -   To open an existing data file in the scope, use ****S****cope ****\>
     ****Load Plot Data...****.
 -   Further information about saving and loading plot data can be found
-    in the application note about data exchange [\[1\]](#anchor-24).
+    in the application note about data exchange [\[1\]](#anchor-23).
 
 Scope settings can be saved to avoid time consuming reconfiguration:
 
@@ -689,7 +680,7 @@ allows to treat any previously saved scope configuration as a template
 for the currently selected axis. This is manly used for configurations
 where all plots refer to the same axis.
 
-### <span id="anchor-27"></span>Analysis
+### <span id="anchor-26"></span>Analysis
 
 The scope incorporates the most frequently used analysis functions.
 
@@ -707,12 +698,12 @@ Analysis also features an **FFT** calculation. When invoked, another
 scope view is opened with the selected data plotted against the
 frequency domain.
 
-### <span id="anchor-28"></span>Formatting
+### <span id="anchor-27"></span>Formatting
 
 The formatting and behavior of the scope, individual plots and cursors
 can be configured in the respective tabs.
 
-## <span id="anchor-29"></span>Triamec Workspace
+## <span id="anchor-28"></span>Triamec Workspace
 
 When working with **TAM System Explorer**, different files are used or
 generated e.g. configuration files, measurement data or firmware files.
@@ -751,7 +742,7 @@ workspaces:
 The currently active workspace folder is shown in the title bar of **TAM
 System Explorer**.
 
-## <span id="anchor-16"></span>TAM Configuration
+## <span id="anchor-15"></span>TAM Configuration
 
 The parametrization of a **Topology Tree** is called **TAM
 Configuration**. The **TAM configuration** contains the parametrization
@@ -775,9 +766,9 @@ The **TAM Configuration** can be saved
     comparison tool to compare two different states of the configuration
     (**e.g. WinMerge**). Scope settings are *not* part of the **TAM
     **Topology Tree** and have to be stored separately (see section
-    [3.3.7](#anchor-26)).
+    [4.3.7](#anchor-25)).
 
-### <span id="anchor-30"></span>Saving the TAM Configuration Persistent on the Device
+### <span id="anchor-29"></span>Saving the TAM Configuration Persistent on the Device
 
 The following steps are required to save the **TAM Co**n**figuration**
 persistent on the drive (see also Figure ):
@@ -807,7 +798,7 @@ alt="Figure 17: Persistent TAM Configuration" />
 Configuration</figcaption>
 </figure>
 
-### <span id="anchor-31"></span>Saving the TAM Configuration on a PC
+### <span id="anchor-30"></span>Saving the TAM Configuration on a PC
 
 To save the **TAM Configuration** on the PC the following steps are
 required (see also Figure ):
@@ -823,7 +814,7 @@ required (see also Figure ):
     -   **Tama assemblies:** If a **Tama** program is loaded to the
         drive either the path to the Tama program or the Tama code
         itself will be saved to the T**AM Configuration** (see also
-        section [3.7](#anchor-32)).
+        section [4.7](#anchor-31)).
     -   **Module assignments:** If a module is assigned to the
         **Topology Tree**, it will be saved to the **TAM
         Configuration**.
@@ -851,7 +842,7 @@ required (see also Figure ):
     unexpected exception, the process may be started again by using the
     ****Restart**** button.
 
-### <span id="anchor-33"></span>Load TAM Configuration
+### <span id="anchor-32"></span>Load TAM Configuration
 
 The following steps are required to load a **TAM Configuration**:
 
@@ -938,7 +929,7 @@ can be done by executing the following steps:
 5.  Save the configuration for *MB* on the PC and persistent on the
     drive.
 
-## <span id="anchor-34"></span>Updating Firmware
+## <span id="anchor-33"></span>Updating Firmware
 
 This section explains how to find a suitable firmware and how to
 download the firmware to the device.
@@ -992,7 +983,7 @@ adapters don't have a station node, they display the ****Update Firmware
 > ****Warning ******S**afe Torque Off** must not be activated before and
 > during a firmware download.
 
-## <span id="anchor-32"></span><span id="anchor-20"></span>Working with Tama Programs
+## <span id="anchor-19"></span><span id="anchor-31"></span>Working with Tama Programs
 
 **Tama **p**rograms** are custom real time extensions to the device
 firmware. They are written in C# and compiled to the proprietary *.tama*
@@ -1007,7 +998,7 @@ routine.
 ****Remark**** ****If you want to author a **Tama *p*rogram** yourself,
 refer to the ****Tama Library**** sample (****Help \> Documentation \>
 Software \> Samples****) or the related documentation
-[\[5\]](#anchor-35) and [\[6\]](#anchor-36) (****Help \> Documentation
+[\[5\]](#anchor-34) and [\[6\]](#anchor-35) (****Help \> Documentation
 \> Software****).
 
 ### Enabling a Tama Program
@@ -1063,19 +1054,19 @@ The following items are provided to control the execution of the **Tama
     of the **Tama vir**t**ual machine** and also to interact with the
     **Tama *p*rogram** (depending on the implementation).
 -   The axis monitor displays the state of the **Tama virt**u**al
-    machine** (see section [3.2](#anchor-18)).
+    machine** (see section [4.2](#anchor-17)).
 -   The icons of the entries in the context menu of the** Tama Manager**
     also indicate whether the **VM** is enabled or disabled.
 
-### <span id="anchor-37"></span>Saving** a **Tama Program **P**ersistent on the Device
+### <span id="anchor-36"></span>Saving** a **Tama Program **P**ersistent on the Device
 
 The currently loaded **Tama *p*rogram** can be saved persistent together
 with the **TAM Configuration** as described in section
-[3.5.1](#anchor-30)**.**
+[4.5.1](#anchor-29)**.**
 
 ****Remark**** ****When a persisted **Tama *p*rogram** is replaced with
 a new **Tama *p*rogram**, the steps described in section
-[3.5.1](#anchor-30) have to be executed again, to persist the new **Tama
+[4.5.1](#anchor-29) have to be executed again, to persist the new **Tama
 *p*rogram**.
 
 A persisted **Tama *p*rogram** will automatically be loaded after a
@@ -1086,11 +1077,11 @@ General.Parameters.EnableIsochronousTama to TRUE.
 
 ### Saving a Tama Program in **a** **TAM** Configuration File
 
-When the configuration is saved (see section [3.5.2](#anchor-31)) while
+When the configuration is saved (see section [4.5.2](#anchor-30)) while
 a **Tama *p*rogram** is loaded, the assembly is also saved to the
 configuration by default.
 
-## <span id="anchor-38"></span>Global Keys
+## <span id="anchor-37"></span>Global Keys
 
 The following keys are always active when TAM System Explorer is active.
 
@@ -1107,7 +1098,7 @@ motion may damage the axis.
 *Pause/Break* Emergency Stop of all active axes. You may also click the
 button located on the left of the axis monitor.
 
-# <span id="anchor-4"></span>Plug-In Modules
+# <span id="anchor-3"></span>Plug-In Modules
 
 The whole functionality of a **Triamec** device can be accessed directly
 by interacting with the registers of **Topology Tree**. However, this
@@ -1139,7 +1130,7 @@ can be assigned to a device (Figure ):
 To remove a plug-in module open the context menu of the module, then
 click ****Remove module****.
 
-## <span id="anchor-19"></span>Axis Module
+## <span id="anchor-18"></span>Axis Module
 
 <img src="./Pictures/10000000000000B60000006F76D7FE5F3FBE568D.png"
 title="fig:" style="width:4.815cm;height:2.937cm"
@@ -1196,7 +1187,7 @@ offers the following controls to interact with the axis (see also Figure
 3.  **Couple**: This button can be used to couple the axis to an
     internal or external trajectory generator (e.g. master slave mode or
     trajectory generation by a **Tama *p*rogram**). See also the related
-    documentation [\[7\]](#anchor-39). Use the stop button  to
+    documentation [\[7\]](#anchor-38). Use the stop button  to
     decouple.
 4.  Jog and Stop buttons:
 
@@ -1232,11 +1223,11 @@ Sub-Modules
     coupling of the axis to an internal or external trajectory generator
     (e.g. master slave mode or trajectory generation by a **Tama
     *p*rogram**). See also the related documentation
-    [\[7\]](#anchor-39).
--   ****Bode Tuning****: See chapter [4.2](#anchor-40) **Bode
+    [\[7\]](#anchor-38).
+-   ****Bode Tuning****: See chapter [5.2](#anchor-39) **Bode
     Analysis**.
 
-## <span id="anchor-40"></span>Bode **Tuning**
+## <span id="anchor-39"></span>Bode **Tuning**
 
 The ****Bode ****Tuning ****module is used to measure the dynamic
 characteristic of an axis in frequency domain and to tune the controller
@@ -1260,13 +1251,13 @@ Find the ****Bode Tuning**** module in the ****Axis Group**** module****
 style="width:15.333cm;height:3.641cm" />
 </figure>
 
-## <span id="anchor-41"></span>Bode Measurement
+## <span id="anchor-40"></span>Bode Measurement
 
 The Bode measurement allows to acquire the frequency response of the
 axis. This measurement is required for **B**ode** tuning and therefore
 has to be executed first.
 
-### <span id="anchor-42"></span>Preparation:
+### <span id="anchor-41"></span>Preparation:
 
 ****Warning**** The **Bode** measurement causes the axis to move.
 Therefore a safe environment and setup is required and the drive has to
@@ -1274,7 +1265,7 @@ be configured correctly.
 
 The following parameters must be set correctly. An incorrect
 parametrization could influence the measurement results or damage the
-motor. See also section [5.2](#anchor-43) on how to configure these
+motor. See also section [6.2](#anchor-42) on how to configure these
 parameters.
 
 -   Axes\[\].Parameters.Motor.Type
@@ -1417,7 +1408,7 @@ the maximum values.
 Normally, the phase plot of response **X/I** should show a phase shift
 of about 180° at low frequencies. If the phase shift is closer to 0°,
 the parameter Axes\[\].Parameters.Motor.InvertDirection might have to be
-altered (see also section [5.5.1](#anchor-44)).
+altered (see also section [6.5.1](#anchor-43)).
 
 If the excitement of the axis varies depending on the position of the
 motor probably one of the following parameters is not set correctly:
@@ -1440,7 +1431,7 @@ signal from an external sensor read by an option module. See ****Help \>
 Developer Samples \> *****SWNET_TamSoftwareSamples\*/BodeConfig* for
 more information.
 
-## <span id="anchor-45"></span>**Controller** Tuning
+## <span id="anchor-44"></span>**Controller** Tuning
 
 The saved Bode measurements can be used to design and optimize the
 position and current controllers with the ****Bode Tuning**** editor.
@@ -1553,13 +1544,13 @@ This section describes how to zoom and pan the plot area:
     required (e.g. *Shift* + scroll wheel).
 -   Reset zoom using the respective button.
 
-# <span id="anchor-5"></span>Drive Configuration
+# <span id="anchor-4"></span>Drive Configuration
 
 This chapter explains how to configure the registers in the Topology
 Tree to commission a servo axis. The commissioning steps are also
-visualized in chapter [8](#anchor-46).
+visualized in chapter [9](#anchor-45).
 
-## <span id="anchor-47"></span>Preparation
+## <span id="anchor-46"></span>Preparation
 
 If the servo drive was already used for a different setup it is
 recommended to reset it to default settings right-clicking the device
@@ -1572,7 +1563,7 @@ rebooting the drive.
 Before commissioning a servo axis, axis specifications are needed. This
 section gives an overview of the required data. If desired, additional
 values can be written to the Axes\[\].Information registers (see also
-section [3.1.4](#anchor-17)).
+section [4.1.4](#anchor-16)).
 
 ##### Motor
 
@@ -1634,7 +1625,7 @@ commissioning an axis:
 -   Safety considerations (**STO**, ...)
 -   Additional requirements …
 
-### <span id="anchor-48"></span>Naming of Stations and Axes
+### <span id="anchor-47"></span>Naming of Stations and Axes
 
 <img src="./Pictures/100000000000010C000000F547422E1FF2E4AAEE.png"
 title="fig:" style="width:6.001cm;height:5.241cm"
@@ -1643,7 +1634,7 @@ identify the related physical axis, it is recommended to change the
 station name and the axis name to a meaningful expression. For example
 if Axis0 is used to drive the **X** axis and Axis1 is used to drive the
 **Y** axis, name the station **Station_XY** and the axes **Axis_X** and
-**Axis_Y**. See sections [3.1](#anchor-14) and [3.2](#anchor-18) for how
+**Axis_Y**. See sections [4.1](#anchor-13) and [4.2](#anchor-17) for how
 to rename stations and axes.
 
 ### Units
@@ -1657,7 +1648,7 @@ Axes\[\].Parameters.PositionController.PositionUnit. For linear axes
 prior to commissioning the drive. All other dimensions are defined
 according the** International System of Units (SI)**.
 
-## <span id="anchor-43"></span>Initial Setup of the Register Tree
+## <span id="anchor-42"></span>Initial Setup of the Register Tree
 
 This section describes the initial setup of the parameter registers. It
 is good practice to fill the registers from top of the tree to bottom
@@ -1665,13 +1656,13 @@ while leaving not yet known parameters (e.g. controller gains) out for
 later configuration. This section follows this practice and explains how
 to set the relevant parameters for a common application. Parameters not
 covered in this section keep their default value. See section
-[3.1.1](#anchor-15) on how to write and commit parameters. For people
+[4.1.1](#anchor-14) on how to write and commit parameters. For people
 with experience in Triamec drive configuration, can lead you through the
 setup.
 
 ****Rema****rk**** ****If the drive was used for a different application
 before, it is recommended to reset the registers to default values (see
-section [3.5.1](#anchor-30)).
+section [4.5.1](#anchor-29)).
 
 The register Tree contains three nodes:
 
@@ -1698,9 +1689,9 @@ The following parameters must be configured for an initial setup:
     resistor can be found in the hardware manual of the power supply.
 -   EncoderTopology: The EncoderTopology is only different from Standard
     if the encoders are connected to the drive in a nonstandard way e.g.
-    if option modules are used (see also [\[8\]](#anchor-49)).
+    if option modules are used (see also [\[8\]](#anchor-48)).
 
-### <span id="anchor-50"></span>Axis\[\].Parameters.Motor
+### <span id="anchor-49"></span>Axis\[\].Parameters.Motor
 
 This node contains registers related to the motor.
 
@@ -1756,7 +1747,7 @@ This node contains registers related to the motor.
 -   EncoderCountsPerMotorRevolution: This parameter describes the number
     of encoder lines per motor revolution. The definition of this
     parameter depends on the type of motor (linear/rotational) and the
-    type of encoder (absolute/relative). See also [\[8\]](#anchor-49)
+    type of encoder (absolute/relative). See also [\[8\]](#anchor-48)
     for more information.
 
     -   In case of a rotational motor and a relative or analog
@@ -1803,7 +1794,7 @@ PeakCurrent, CurrentSquareTime) must be configured correctly before the
 drive is enabled the first time. Incorrect settings could damage the
 motor.
 
-### <span id="anchor-51"></span>Axis\[\].Parameters.PathPlanner
+### <span id="anchor-50"></span>Axis\[\].Parameters.PathPlanner
 
 This node contains the parameters relevant for the internal path
 planner. These parameters do not influence the trajectory generation of
@@ -1924,7 +1915,7 @@ inequations above are simplified.
 |                                                                                                                                                                                                        
  $${v\_{\text{red}} = v\_{\text{max}}}f\_{\mathit{drf}};\mspace{108mu}{a\_{\text{red}} = a\_{\text{max}}}f\_{\mathit{drf}}^{2};\mspace{108mu}{r\_{\text{red}} = r\_{\text{max}}}f\_{\mathit{drf}}^{3}$$  |
 
-### <span id="anchor-52"></span>Axis\[\].Parameters.PositionController
+### <span id="anchor-51"></span>Axis\[\].Parameters.PositionController
 
 The position controller node contains registers to configure the
 encoder, the position controller and the feed forward. For a normal axis
@@ -1937,7 +1928,7 @@ encoder, e.g. for dual loop-control.
     Explorer** are displayed correctly.  
     With **EtherCAT** this parameter is also used to set the scaling of
     the set-points received from the control system. See
-    [\[2\]](#anchor-8) for more information.
+    [\[2\]](#anchor-7) for more information.
 -   MasterPositionSource: With this parameters the source for
     Signal.PositionController.MasterPosition can be defined.
 
@@ -1963,7 +1954,7 @@ Figure shows the diagram of the feed forward block.
 
 -   But in general it is recommended to set this parameter to zero for
     the initial setup. The parameter can then be set and optimized later
-    based on measurements as described in section [5.4.6](#anchor-53).
+    based on measurements as described in section [6.4.6](#anchor-52).
 
 -   FeedForwardCoulombCurrent: This parameter compensates Coulomb
     friction. Initially this parameter should be set to zero. If
@@ -1999,7 +1990,7 @@ encoder signal, e.g. for dual loop-control.
     related connector. By default this is connector X20 for Axis\[0\]
     and X21 for Axis\[1\]. Set Type to Analog if the position
     information is provided by a pair of analog sine and cosine signals
-    with an amplitude of 1Vpp. See [\[8\]](#anchor-49) for information
+    with an amplitude of 1Vpp. See [\[8\]](#anchor-48) for information
     about other supported encoder types. If no encoder is attached to
     the connector, the parameter has to be set to None to avoid an
     EncoderError.
@@ -2022,7 +2013,7 @@ encoder signal, e.g. for dual loop-control.
         linear encoder the value for Pitch is taken from the data sheet
         of the encoder, e.g. 0.02 for an encoder with a pitch of 20um
         and position units of "mm".If an encoder with digital protocol
-        is used refer to [\[8\]](#anchor-49) on how to set the Pitch
+        is used refer to [\[8\]](#anchor-48) on how to set the Pitch
         parameter.
 
 -   VelocityFilterT1: With this parameter the bandwidth of
@@ -2078,14 +2069,14 @@ acceleration and deceleration. ****
 
 The controller node contains registers to configure Controller\[0\] and
 Controller\[1\]. The structure of the controller is described in section
-[5.4](#anchor-54). For an axis with a single encoder only
+[6.4](#anchor-53). For an axis with a single encoder only
 Controller\[0\] has to be configured. Controller\[1\] is only used if an
 axis provides a second encoder signal e.g. for dual loop-control.
 
 -   Kp, Ki, Kd, T1: These registers are used to configure the PIDT1
     position controller. For the initial configuration, these values can
     be set to zero. The setup and optimization of the position
-    controller is described in section [5.4.3](#anchor-55).
+    controller is described in section [6.4.3](#anchor-54).
 -   PositionErrorLimit: This parameter defines the maximum allowed
     position error. If the position error exceeds this limit, the axis
     is disabled and a PositionErrorLimit error is issued. This is an
@@ -2097,14 +2088,14 @@ axis provides a second encoder signal e.g. for dual loop-control.
     integral term. It is recommended to set this value to about 40% to
     80% of the nominal current.
 -   Filters: Filters can be used to optimize the stability of the
-    controller loop. See section [5.4.5](#anchor-56) for more
+    controller loop. See section [6.4.5](#anchor-55) for more
     information. For the initial setup the Type of the filters should be
     set to bypassed.
 
 ****Warni****ng**** ****PositionErrorLimit must be configured correctly
 before the drive is enabled the first time to protect the axis.
 
-### <span id="anchor-57"></span>Axis\[\].Parameters.Commutation
+### <span id="anchor-56"></span>Axis\[\].Parameters.Commutation
 
 **Commutation** is the process of applying current to the phases in the
 right order to generate motion. For brushed DC-Motors, commutation is
@@ -2123,7 +2114,7 @@ configured:
 
     -   NoPhasing: This method is used if Axis\[\].Motor.Type = DC or if
         a motor with an absolute encoder is already initialized with the
-        correct phasing angle (see section [6.1](#anchor-58)).
+        correct phasing angle (see section [7.1](#anchor-57)).
     -   RotorAlignment: The rotor is aligned by applying a current to a
         specific phase angle. This causes the rotor to align with the
         magnetic field of the phases. If the rotor is not already
@@ -2157,7 +2148,7 @@ configured:
         controller is successfully done.
     -   NoPhasing: This option is used if Axis\[\].Motor.Type = DC.
     -   AbsoluteEncoder; AbsoluteEncoderOffsetEncoder;
-        AbsoluteEncoderOffsetDrive: See section [6.1](#anchor-58) for
+        AbsoluteEncoderOffsetDrive: See section [7.1](#anchor-57) for
         how to setup the commutation based on absolute encoders.
 
     For an initial setup it is recommended to use ForcePhasing.
@@ -2204,10 +2195,10 @@ parameters can be used to configure the oscillation:
     alt=" Figure 41: Phasing sequence with Type = RotorAlignment." />SineFrequency:
     Frequency of the angular oscillation. Typical value is 10Hz.
 
-### <span id="anchor-59"></span>Axis\[\].Parameters.CurrentController
+### <span id="anchor-58"></span>Axis\[\].Parameters.CurrentController
 
 This section describes the initial setup of the current controller. The
-structure of the controller is described in section [5.4](#anchor-54).
+structure of the controller is described in section [6.4](#anchor-53).
 
 -   PwmFrequency: This parameter is used to define the frequency of the
     pulse width modulation. In most cases this parameter should be set
@@ -2218,7 +2209,7 @@ structure of the controller is described in section [5.4](#anchor-54).
 -   Kr, Tn: These registers are used to configure the PI current
     controller. For initial configuration these values can be set to
     zero. The setup and optimization of the current controller is
-    described in section [5.4.1](#anchor-60).
+    described in section [6.4.1](#anchor-59).
 
 -   IntegratorOutputLimit: This parameter can be used to restrict the
     output of the integral term to avoid a windup behavior of the
@@ -2255,12 +2246,12 @@ bypassed to deactivate it. Refer to Figure for more information.
 
 This node can be used to configure a homing sequence executed by the
 drive. More information about how to setup the homing of an axis is
-documented in [\[11\]](#anchor-61).
+documented in [\[11\]](#anchor-60).
 
 -   Method: For the initial setup of the axis no homing is required and
     the homing method is set to None.
 
-## <span id="anchor-62"></span>Verification of the Encoder
+## <span id="anchor-61"></span>Verification of the Encoder
 
 With this test the configured encoder pitch and the encoder direction
 are verified. For the test, move the axis by hand for a certain distance
@@ -2287,14 +2278,14 @@ mismatch, adjust the following parameters and execute the test again.
 In case the position signal shows no movement at all, the connection of
 the encoder has to be verified. Especially if an option module is used
 also check the setting of General.Parameters.EncoderTopology (see
-[\[8\]](#anchor-49) for more information).
+[\[8\]](#anchor-48) for more information).
 
-## <span id="anchor-54"></span>Controller Tuning
+## <span id="anchor-53"></span>Controller Tuning
 
 After initial configuration of the parameters, the controllers are ready
 to be tuned. For the tuning of the controllers the **Bode Tuning
 **module provided by **TAM System Explorer** is used (see section
-[4.2](#anchor-40)). The following sections show the structure of the
+[5.2](#anchor-39)). The following sections show the structure of the
 controller and explain how to execute the **Bode Tuning**. For people
 with experience in Triamec drive configuration, can lead you through the
 tuning procedure.
@@ -2313,7 +2304,7 @@ controller. Both, the position controller and the current controller
 support feed forward to set the current and the voltage based on the
 setpoint trajectory.
 
-### <span id="anchor-60"></span>Current Controller Structure
+### <span id="anchor-59"></span>Current Controller Structure
 
 The controller structure consists of a PI-controller with proportional
 gain Kr and integral time constant Tn. Additionally, the integral term
@@ -2328,11 +2319,11 @@ cases the dynamic of the current loop can be improved by applying
 voltage feed forward. Figure shows the block-diagram for voltage feed
 forward.
 
-### <span id="anchor-63"></span>Tuning of the Current Controller
+### <span id="anchor-62"></span>Tuning of the Current Controller
 
 This section describes how the proportional gain Kr and the integral
 time constant Tn for the current controller can be determined with
-**Bode** **Tuning**. See section [5.2](#anchor-43) on how to initially
+**Bode** **Tuning**. See section [6.2](#anchor-42) on how to initially
 set up the other parameters in the current controller structure. The
 following steps are required to start the tuning:
 
@@ -2340,9 +2331,9 @@ following steps are required to start the tuning:
     required if the current controller is already configured with a
     stable setting).
 2.  Execute a bode measurement and save the measured data. See section
-    [4.3](#anchor-41) on how to do the measurement.
+    [5.3](#anchor-40) on how to do the measurement.
 3.  Open the measured data with the **Bode Tuning **application. See
-    section [4.4](#anchor-45) on how to open the measurement and how to
+    section [5.4](#anchor-44) on how to open the measurement and how to
     use the application.
 4.  To setup the current controller, select the ****Current**** radio
     button in the ****Select Controller**** panel.
@@ -2425,7 +2416,7 @@ Rule of thumb for an initial setup of the current controller:
     the ****C**ommit** button to activate the parameter changes on the
     drive.
 
-### <span id="anchor-55"></span>Position Controller Structure
+### <span id="anchor-54"></span>Position Controller Structure
 
 <img src="./Pictures/10000000000005380000013DB80EEC5345D9BF6F.png"
 title="fig:" style="width:17.801cm;height:4.15cm"
@@ -2445,7 +2436,7 @@ forward of position, velocity and acceleration also coulomb friction can
 be compensated. The FeedForwardFilter can be used to fine tune the
 feed-forward transfer function.
 
-### <span id="anchor-64"></span>Tuning of a Single-Loop Position Controller
+### <span id="anchor-63"></span>Tuning of a Single-Loop Position Controller
 
 ****Im****p****ortant**** The current controller (inner loop) has to be
 setup before the position controller (outer loop). This is because the
@@ -2538,7 +2529,7 @@ Use the ****Filter Parameter**** panel to set the ****Type****,
 frequency ****f\[Hz\]**** and damping ****D\[1\]****. To disable the
 filter, the type is set to ****Bypass****. If ****Advanced**** is
 checked, the frequency and damping of the numerator and denominator can
-be set independent (see also chapter [5.4.5](#anchor-56)).
+be set independent (see also chapter [6.4.5](#anchor-55)).
 
 The **Bode** plots show the following complex transfer functions:
 
@@ -2632,7 +2623,7 @@ Rule of thumb for an initial setup of the position controller:
 2.  Check the stability of the controller in the Bode and the Nyquist
     plot based on the criteria listed above. If the stability of the
     controller is insufficient reduce *f<sub>gc </sub>*or try to apply
-    filters to compensate **unstable resonances.**
+    filters to compensate unstable resonances.**
 3.  **If the stability is sufficient, the **integral** time constant can
     be set **by using the following equation as an initial value.**
 
@@ -2651,7 +2642,7 @@ Rule of thumb for an initial setup of the position controller:
     the ****C**ommit** button to activate the parameter changes on the
     drive.
 
-### <span id="anchor-56"></span>Filters
+### <span id="anchor-55"></span>Filters
 
 Filters can be used to enhance the properties of the controller loop for
 example by compensating mechanical resonances. Although filters can
@@ -2663,7 +2654,7 @@ following reasons:
 -   Filters increase the complexity of the controller-loop. Therefore a
     robust setting is more difficult to find.
 -   Consider that only resonances which violate the stability criterion
-    (see section [5.4.4](#anchor-64)) need to be compensated.
+    (see section [6.4.4](#anchor-63)) need to be compensated.
 
 The design of a filter should be done with the *Bode* tool based on a
 *Bode* measurement. Different filter types can be selected. But in most
@@ -2738,7 +2729,7 @@ plot, resonances appear as circles. Figure shows the same transfer
 function now with a Notch2 filter applied at 2000Hz. The controller loop
 is now stable.
 
-### <span id="anchor-53"></span>Acceleration Feed Forward
+### <span id="anchor-52"></span>Acceleration Feed Forward
 
 A proper setting of the value for FeedForwardAcceleration is very
 important to achieve small position errors during high dynamic
@@ -2746,7 +2737,7 @@ movements. The value for FeedForwardAcceleration can also be determined
 based on the Bode Measurement:
 
 1.  Open the measured data with the **Bode Tuning **application. See
-    section [4.4](#anchor-45) on how to open the measurement and how to
+    section [5.4](#anchor-44) on how to open the measurement and how to
     use the application.
 2.  Select **Position 0** in the ****Select Controller**** panel if
     single loop controller is used.
@@ -2772,13 +2763,13 @@ based on the Bode Measurement:
     and commit the calculated feed forward value in the register
     Axis\[\]/Parameters/PositionController/FeedForwardAcceleration.
 
-## <span id="anchor-67"></span>Verification of the Setup
+## <span id="anchor-66"></span>Verification of the Setup
 
 This section describes how to use the **Axis Module** and the **Scope**
-to verify the setup (see also section [3.3](#anchor-22) and
-[4.1](#anchor-19)).
+to verify the setup (see also section [4.3](#anchor-20) and
+[5.1](#anchor-18)).
 
-### <span id="anchor-44"></span>Motor Direction and Magnetic Pitch
+### <span id="anchor-43"></span>Motor Direction and Magnetic Pitch
 
 To verify the motor direction and the magnetic pitch, the TestGenerator
 is used to apply a rotating current vector, which will move the axis in
@@ -2792,7 +2783,7 @@ if:
 Preconditions:
 
 -   To rotate a current vector, the current controller needs to be
-    configured properly as described in section [5.4.2](#anchor-63).
+    configured properly as described in section [6.4.2](#anchor-62).
 
 The following steps are required to run the verification.
 
@@ -2870,7 +2861,7 @@ different positions and it should be verified if a move can be executed:
             invalid commutation. In this case the PhasingMethod should
             be changed to AngleSearch and the commutation parameters
             should be adjusted accordingly (see section
-            [5.2.7](#anchor-57)).
+            [6.2.7](#anchor-56)).
 
     -   If Commutation.PhasingMethod is AngleSearch:
 
@@ -2900,7 +2891,7 @@ the phasing sequence or ****at the start of a ****move, the
 ****parameter ****MotorInvertDirection ****might be****
 ****incorrect****. ****Also verify ****Parameters.Motor.PolePairs****
 and ****Parameters.Motor.EncoderCountsPerMotorRevolution (see also
-section [5.5.1](#anchor-44))****.****
+section [6.5.1](#anchor-43))****.****
 
 ### Position Controller
 
@@ -2959,16 +2950,16 @@ oscillation.
 
 If the position error increases when a certain velocity is reached, the
 limit for the voltage output might have been reached (see also
-OutputLimit of the current controller in [5.2.8](#anchor-59)).
+OutputLimit of the current controller in [6.2.8](#anchor-58)).
 
 If the position error increases when a certain acceleration is reached,
 the limit for the current output might have been reached (see also
-OutputLimit of the position controller in [5.2.4](#anchor-52) ).
+OutputLimit of the position controller in [6.2.4](#anchor-51) ).
 
 ### Acceleration and Velocity Feed forward.
 
 The following setup is used to verify the acceleration feed forward (see
-also [5.4.6](#anchor-53)):
+also [6.4.6](#anchor-52)):
 
 1.  Prepare the scope by loading the **Scope Configuration** named
     ****Feed Forward Analysis****.
@@ -2986,18 +2977,18 @@ ActualCurrentQ and the position error becomes much smaller compared to
 without acceleration feed forward. In some cases also velocity feed
 forward has to be added to get a good match.
 
-# <span id="anchor-6"></span>Advanced Topics
+# <span id="anchor-5"></span>Advanced Topics
 
 This chapter handles topics which are not part of the basic setup of an
-axis described in chapter [5](#anchor-5).
+axis described in chapter [6](#anchor-4).
 
-## <span id="anchor-58"></span>Commutation with Absolute Encoders
+## <span id="anchor-57"></span>Commutation with Absolute Encoders
 
 For the commutation of a synchronous AC motor the angle between the
 magnetic field of the rotor and the stator windings needs to be known.
 With relative encoders, this angle has to be determined at least after
 each restart of the drive which is called *Phasing *(see also section
-[5.2.7](#anchor-57)). With absolute encoders, the commutation angle does
+[6.2.7](#anchor-56)). With absolute encoders, the commutation angle does
 not change relative to the encoder position and therefore the phasing
 has to be executed only once. The resulting commutation angle can then
 be stored and reused after each restart. The following absolute encoder
@@ -3027,25 +3018,25 @@ options are available:
 -   -   AbsoluteEncoder: In this case the commutation angle is directly
         derived from the absolute position of the encoder. This case
         requires a preset of the encoder by the manufacturer of the
-        motor or by the user (see section [6.1.2](#anchor-68)).
+        motor or by the user (see section [7.1.2](#anchor-67)).
     -   AbsoluteEncoderOffsetEncoder: In this case the commutation
         offset is loaded from the encoder memory. This requires a
         successful initial phasing of the axis followed by storing the
-        offset to the encoder (see section [6.1.3](#anchor-69)).
+        offset to the encoder (see section [7.1.3](#anchor-68)).
     -   AbsoluteEncoderOffsetDrive: In this case the commutation offset
         is loaded from the drive memory. This requires a successful
         initial phasing of the axis followed by storing the
         configuration persistent on the drive (see section
-        [6.1.4](#anchor-70)).
+        [7.1.4](#anchor-69)).
 
-### <span id="anchor-68"></span>Set Absolute Encoder Zero equal to Commutation Zero
+### <span id="anchor-67"></span>Set Absolute Encoder Zero equal to Commutation Zero
 
 The following steps are required to set the encoder zero equal to the
 commutation zero:
 
 1.  The commutation sequence has to be set to RotorAlignment in
     Axes\[\].Parameters.Commutation (see also section
-    [5.2.7](#anchor-57)).
+    [6.2.7](#anchor-56)).
 2.  Execute the phasing-sequence by executing the command
     Axes\[\].Commands.Commutation.Command = StartPhasingAndZeroEncoder.
 3.  Check if Axes\[\].Signals.Commutation.State is Valid. If State is
@@ -3054,14 +3045,14 @@ commutation zero:
 4.  To activate commutation based on the absolute encoder set
     Axes\[\].Parameters.Commutation.EnablingMethod to AbsoluteEncoder.
 
-### <span id="anchor-69"></span>Save Commutation Offset to the Encoder
+### <span id="anchor-68"></span>Save Commutation Offset to the Encoder
 
 The following steps are required to save the commutation offset to the
 encoder:
 
 1.  The commutation sequence has to be configured correctly in
     Axes\[\].Parameters.Commutation (see also section
-    [5.2.7](#anchor-57)).
+    [6.2.7](#anchor-56)).
 2.  Execute the phasing-sequence by executing the command
     Axes\[\].Commands.Commutation.Command = StartPhasingAndSaveEncoder.
 3.  Check if Axes\[\].Signals.Commutation.State is Valid. If State is
@@ -3071,18 +3062,18 @@ encoder:
     Axes\[\].Parameters.Commutation.EnablingMethod to
     AbsoluteEncoderOffsetEncoder.
 
-### <span id="anchor-70"></span>Save Commutation Offset to the Drive
+### <span id="anchor-69"></span>Save Commutation Offset to the Drive
 
 The following steps are required to save the commutation offset to the
 drive:
 
 1.  The commutation sequence has to be configured correctly in
     Axes\[\].Parameters.Commutation (see also section
-    [5.2.7](#anchor-57)).
+    [6.2.7](#anchor-56)).
 2.  Execute the phasing-sequence either
 
 -   -   by enabling the axis with the axis module (see
-        [4.1](#anchor-19)) or
+        [5.1](#anchor-18)) or
     -   by executing the command Axes\[\].Commands.Commutation.Command =
         StartPhasing.
 
@@ -3094,7 +3085,7 @@ drive:
     AbsoluteEncoderOffsetDrive.
 3.  If Axes\[\].Signals.Commutation.State is Valid save the
     configuration persistent on the drive (see section
-    [3.5.1](#anchor-30)) to store the commutation offset.
+    [4.5.1](#anchor-29)) to store the commutation offset.
 
 ### How the Commutation Offset is Derived
 
@@ -3191,7 +3182,7 @@ This register displays the commutation offset stored on the encoder.
 Axes\[\].Signals.PositionController.Encoders\[\].DigitalEncoder.DebugInfo:
 Commutation offset is valid if bit 2 of this register is set.
 
-# <span id="anchor-7"></span>Tria-Link Observer
+# <span id="anchor-6"></span>Tria-Link Observer
 
 This section describes how the **Tria-**L**ink** can be accessed with
 the **TAM System Explorer** while other applications like **TwinCAT**
@@ -3203,7 +3194,7 @@ There are three options to access the **Tria-**L**ink**:
 -   use an *USB *O*bserver*
 -   access a **Tria-Link **device with Ethernet and use the device as a
     bridge between **Ethernet** and **Tria-Link **(see
-    [\[4\]](#anchor-12)).
+    [\[4\]](#anchor-11)).
 
 The following section describes the first two methods in detail.
 
@@ -3215,7 +3206,7 @@ alt=" Figure 66: System with observer and USB observer" />
 Figure 66: System with observer and USB observer</figcaption>
 </figure>
 
-## <span id="anchor-71"></span>USB Observer
+## <span id="anchor-70"></span>USB Observer
 
 The USB observer consists of a *TL* or *TL-DMA* adapter card connected
 with an USB cable to a second PC or to the master PC. The USB cable can
@@ -3234,7 +3225,7 @@ If the USB cable is connected to the master PC, ****File \> Prefereces
 over USB****. This prevents the TAM System Explorer from accessing the
 PCI board that is already occupied by the control system.
 
-## <span id="anchor-72"></span>Observer Card
+## <span id="anchor-71"></span>Observer Card
 
 To observe the **Tria-Link** it is possible to install an additional PCI
 based *Tria-Link* adapter card (typically into a 2<sup>nd</sup> PC) and
@@ -3257,7 +3248,7 @@ have to be executed:
     Configuration” and “Tria-Link Adapter Reset Warning” dialogs.
 5.  Perform ****File \> ****Identify**** on the Observer PC.
 
-# <span id="anchor-46"></span>Flow Charts
+# <span id="anchor-45"></span>Flow Charts
 
 <figure>
 <img src="./Pictures/10000001000006EC00000C98F7005558292A8B45.png"
@@ -3275,44 +3266,44 @@ alt="Figure 69: Position Controller Tuning Workflow" />
 Workflow</figcaption>
 </figure>
 
-# <span id="anchor-73"></span>References
+# <span id="anchor-72"></span>References
 
-1.  <span id="anchor-24"></span>“Data Export and Import in
+1.  <span id="anchor-23"></span>“Data Export and Import in
     TAM System Explorer Application Note”,  
     AN132_TamSystemExplorerDataExchange_EP006.pdf, Triamec Motion AG,
     2022
-2.  <span id="anchor-8"></span>"Triamec TwinCat Quick Startup Guide”,
+2.  <span id="anchor-7"></span>"Triamec TwinCat Quick Startup Guide”,
     SWTC_TwinCAT-UserGuide_EP024.pdf, Triamec Motion AG, 2016
-3.  <span id="anchor-9"></span>“Triamec TwinCat Ethercat Quick Startup
+3.  <span id="anchor-8"></span>“Triamec TwinCat Ethercat Quick Startup
     Guide”, SWTC_TwinCAT-UserGuideEcat_EP005.pdf, Triamec Motion AG,
     2019
-4.  <span id="anchor-12"></span>“Ethernet Interface”,
+4.  <span id="anchor-11"></span>“Ethernet Interface”,
     AN123_Ethernet_EP004.pdf, Triaemc Motion AG, 2022
-5.  <span id="anchor-35"></span>“TAM API Developer Manual”,
+5.  <span id="anchor-34"></span>“TAM API Developer Manual”,
     SWNET_TamApiDeveloperManual_EP033.pdf, Triamec Motion AG, 2019
-6.  <span id="anchor-36"></span>“Tama Compiler User Guide”,
+6.  <span id="anchor-35"></span>“Tama Compiler User Guide”,
     SWTAMA_CompilerUserGuide_EP026.pdf, Triamec Motion AG, 2019
-7.  <span id="anchor-39"></span>“Axis Coupling in TAM System Explorer
+7.  <span id="anchor-38"></span>“Axis Coupling in TAM System Explorer
     Application Note”,  
     AN131_TamSystemExplorerAxisCoupling_EP002.pdf, Triamec Motion AG,
     2022
-8.  <span id="anchor-49"></span>“Encoder configuration for the TSD drive
+8.  <span id="anchor-48"></span>“Encoder configuration for the TSD drive
     series”, AN107_Encoder_EP017.pdf,  
     Triamec Motion AG, 2022
-9.  <span id="anchor-74"></span>“Sensorless Motor Commissioning User
+9.  <span id="anchor-73"></span>“Sensorless Motor Commissioning User
     Guide”,  
     AN133_SensorlessCommissioning\_­UserGuide_EP005.pdf, Triamec Motion
     AG, 2022
-10. <span id="anchor-65"></span>"Dual-Loop Controller with Screw Drive",
+10. <span id="anchor-64"></span>"Dual-Loop Controller with Screw Drive",
     AN138_DualLoopControllerWithScrewDriveAxis_EP006.pdf, Triamec Motion
     AG, 2022
-11. <span id="anchor-61"></span>“Homing Procedures and Setup”,
+11. <span id="anchor-60"></span>“Homing Procedures and Setup”,
     AN141_HomingProceduresAndSetup_EP002.pdf, Triamec Motion AG, 2022
-12. <span id="anchor-66"></span>“MIMO Gantry Commissioning”,
+12. <span id="anchor-65"></span>“MIMO Gantry Commissioning”,
     AN139_MIMOGantryCommissioning_UserGuide_EP004.pdf, Triamec Motion
     AG, 2022
 
-# <span id="anchor-75"></span>Revision History
+# <span id="anchor-74"></span>Revision History
 
 <table>
 <tbody>
@@ -3320,14 +3311,14 @@ Workflow</figcaption>
 <td>004</td>
 <td>2020-03-02</td>
 <td>dg</td>
-<td>Section <a href="#anchor-51">5.2.3</a> modulo settings fixed.</td>
+<td>Section <a href="#anchor-50">6.2.3</a> modulo settings fixed.</td>
 </tr>
 <tr class="even">
 <td>005</td>
 <td>2020-04-20</td>
 <td>dg</td>
 <td>Description for brake release added in section <a
-href="#anchor-50">5.2.2</a>.</td>
+href="#anchor-49">6.2.2</a>.</td>
 </tr>
 <tr class="odd">
 <td>006</td>
@@ -3357,14 +3348,14 @@ MasterPositionSource added.</td>
 <td><p>chm</p>
 <p>chm</p></td>
 <td><p>Subscription registers moved into internal signals. Revise
-section <a href="#anchor-32">3.7</a>.</p>
+section <a href="#anchor-31">4.7</a>.</p>
 <p>GUI changes adapted.</p></td>
 </tr>
 <tr class="odd">
 <td>010</td>
 <td>2021-08-09</td>
 <td>bl</td>
-<td>Section <a href="#anchor-42">4.3.1</a> Added
+<td>Section <a href="#anchor-41">5.3.1</a> Added
 Axes[i]/Parameters/PositionController/OutputLimit to required
 configuration</td>
 </tr>
@@ -3372,8 +3363,8 @@ configuration</td>
 <td>011</td>
 <td>2021-08-16</td>
 <td>dg</td>
-<td>Rule of thumb adjusted in section <a href="#anchor-60">5.4.1</a> and
-<a href="#anchor-64">5.4.4</a>.</td>
+<td>Rule of thumb adjusted in section <a href="#anchor-59">6.4.1</a> and
+<a href="#anchor-63">6.4.4</a>.</td>
 </tr>
 <tr class="odd">
 <td>012</td>
@@ -3432,7 +3423,7 @@ minor updates</td>
 
 [^5]: Similar symptoms are caused by incorrect configuration of
     InvertDirection, EncoderCountsPerMotorRevolution and PolePairs (see
-    also section [5.5.1](#anchor-44)).
+    also section [6.5.1](#anchor-43)).
 
 [^6]: IncrementalRS422; IncrementalTTL; Analog; AnalogEndat;AnalogBissB:
 
@@ -3449,8 +3440,8 @@ minor updates</td>
     *H*<sub>*o*</sub>*(f*<sub>*gc*</sub>*)* crosses 0dB and -180°. See
     d) in Figure .
 
-[^10]:  For other typologies see application note [\[10\]](#anchor-65)
-    for dual loop axes and [\[12\]](#anchor-66) for gantry axes.
+[^10]:  For other typologies see application note [\[10\]](#anchor-64)
+    for dual loop axes and [\[12\]](#anchor-65) for gantry axes.
 
 [^11]: The gain crossover frequency *f*<sub>*gc*</sub> is the frequency
     at which the gain of the tuned controller crosses 0dB.
