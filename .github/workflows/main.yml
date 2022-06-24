@@ -22,10 +22,15 @@ jobs:
       - name: convert
         uses: docker://pandoc/core:2-ubuntu
         with:
-          args: "-t gfm --extract-media=gitbook/ docs/ServoDrive-SetupGuide_EP.odt -o gitbook/ServoDrive-SetupGuide_trial.md" # gets appended to pandoc command
+          args: "-t gfm --extract-media=. docs/ServoDrive-SetupGuide_EP.odt -o ServoDrive-SetupGuide_trial.md"
       - name: List files in the repository (debug)
         run: |
           ls ${{ github.workspace }}
+      - name: move to gitbook directory # needed for working relative paths
+        run: |
+          rm -r gitbook/Pictures
+          mv ServoDrive-SetupGuide_trial.md gitbook/
+          sudo mv Pictures gitbook/
       - name: result
         uses: actions/upload-artifact@v3
         with:
