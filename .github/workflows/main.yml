@@ -26,7 +26,7 @@ jobs:
       - name: move to gitbook directory # needed for working relative paths
         run: |
           mv ServoDrive-SetupGuide_trial.md gitbook
-          mv /Pictures /gitbook/
+          mv Pictures gitbook/
       - name: List files in the repository (debug)
         run: |
           ls ${{ github.workspace }}
