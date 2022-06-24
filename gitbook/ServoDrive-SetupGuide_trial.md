@@ -142,8 +142,7 @@ following steps describe how to run the installation:
     and acknowledge the installation process.
 5.  The setup process will also install the required drivers. Additional
     prompts might appear during this process which need to be approved.
-6.  <img
-    src="gitbook/Pictures/Pictures/100000010000025800000175EBB441FFE17D68F1.png"
+6.  <img src="gitbook/Pictures/100000010000025800000175EBB441FFE17D68F1.png"
     title="fig:" style="width:8.999cm;height:5.636cm"
     alt=" Figure 1: TAM Software Setup" />In some cases a restart of the
     *PC* is required to complete the installation process. In this case,
@@ -178,8 +177,7 @@ after the start, containing the following panels:
     and to log messages.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/2000005E00004A38000031FDBDD2F08B7C8C079D.svm"
+<img src="gitbook/Pictures/2000005E00004A38000031FDBDD2F08B7C8C079D.svm"
 style="width:18.002cm;height:12.12cm"
 alt=" Figure 2: TAM System Explorer after start up. 1: Topology Tree; 2: Axis Monitor; 3: Scope Window; 4: Tab Panel" />
 <figcaption aria-hidden="true"><br />
@@ -193,54 +191,38 @@ After an initializing phase, the** **T**opology **T**ree** shows the
 actual hardware content of the system. The **Topology Tree** is built
 out of the following objects:
 
-|                                                                              |                        |                                                                                                                                       |
-|------------------------------------------------------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <img                                                                         
- src="gitbook/Pictures/Pictures/1000000100000010000000105CBF1ABE07E862DC.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Local Computer         | Computer on which the **TAM System Explorer** is running                                                                              |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/100000010000001000000010EE2A24D77741BDBF.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Tria-Link Adapter Card | **PCIe** adapter card used to communicate over **Tria-Link**.                                                                         |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/10000001000000100000001047AD1D04D65E8FA9.png"  
- style="width:0.42cm;height:0.42cm" />                                         | USB Adapter            | Adapter if **USB** is connected to a **TLO** card, an **Ethernet** to **USB** adapter or if **USB** is directly connected to a device |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/100000010000001000000010C551E56FFD0B7EA4.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Ethernet Adapter       | Used to communicate over **Ethernet**                                                                                                 |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/10000001000000100000001059F8E935C5AB163C.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Tria-Link              | **Tria-Link** communication channel used to connect the adapter with devices                                                          |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/10000001000000100000001030D2D618D9ECE114.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Tria-Link Observer     | **Tria-Link** communication channel in observer mode (see chapter [7](#anchor-7))                                                     |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/1000000100000010000000103685E167FFEAF347.png"  
- style="width:0.423cm;height:0.423cm" />                                       | Station                | Addressable node within the link                                                                                                      |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/1000000100000010000000109BAE6FE6F7D7B810.png"  
- style="width:0.423cm;height:0.423cm" /> <img                                  
- src="gitbook/Pictures/Pictures/100000010000001000000010FD39DBAF3F16ECEF.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Device                 | Logical unit providing a register tree, for example a servo drive                                                                     |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/100000010000001000000010AB22FA745AD1A8F2.png"  
- style="width:0.42cm;height:0.42cm" /> <img                                    
- src="gitbook/Pictures/Pictures/1000000100000010000000108621CD3A8466C083.png"  
- style="width:0.423cm;height:0.423cm" />                                       | Register Node          | Collection of registers with similar purpose (array of similar structures)                                                            |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/10000001000000100000001021656958D347E96B.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Register               | Representing a parameter, a command, a signal or information                                                                          |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/100000010000001000000010DE168281BBDD696A.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Register Array         | An array of registers of the same type                                                                                                |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/1000000100000010000000108C92A8DAC7412EA9.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Tama Manager           | Allows to assign, download and enable **Tama** programs                                                                               |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/100000010000001000000010BF7749A038E43931.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Module                 | User interfaces which simplify the register access e.g. for the tuning of the axes.                                                   |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/100000010000001000000010297828A6A3E1230E.png"  
- style="width:0.42cm;height:0.42cm" />                                         | Option Module          | Option module for additional input and output.                                                                                        |
+|                                                                                                                  |                        |                                                                                                                                       |
+|------------------------------------------------------------------------------------------------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="gitbook/Pictures/1000000100000010000000105CBF1ABE07E862DC.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Local Computer         | Computer on which the **TAM System Explorer** is running                                                                              |
+| <img src="gitbook/Pictures/100000010000001000000010EE2A24D77741BDBF.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Tria-Link Adapter Card | **PCIe** adapter card used to communicate over **Tria-Link**.                                                                         |
+| <img src="gitbook/Pictures/10000001000000100000001047AD1D04D65E8FA9.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | USB Adapter            | Adapter if **USB** is connected to a **TLO** card, an **Ethernet** to **USB** adapter or if **USB** is directly connected to a device |
+| <img src="gitbook/Pictures/100000010000001000000010C551E56FFD0B7EA4.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Ethernet Adapter       | Used to communicate over **Ethernet**                                                                                                 |
+| <img src="gitbook/Pictures/10000001000000100000001059F8E935C5AB163C.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Tria-Link              | **Tria-Link** communication channel used to connect the adapter with devices                                                          |
+| <img src="gitbook/Pictures/10000001000000100000001030D2D618D9ECE114.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Tria-Link Observer     | **Tria-Link** communication channel in observer mode (see chapter [7](#anchor-7))                                                     |
+| <img src="gitbook/Pictures/1000000100000010000000103685E167FFEAF347.png"                                         
+ style="width:0.423cm;height:0.423cm" />                                                                           | Station                | Addressable node within the link                                                                                                      |
+| <img src="gitbook/Pictures/1000000100000010000000109BAE6FE6F7D7B810.png"                                         
+ style="width:0.423cm;height:0.423cm" /> <img src="gitbook/Pictures/100000010000001000000010FD39DBAF3F16ECEF.png"  
+ style="width:0.42cm;height:0.42cm" />                                                                             | Device                 | Logical unit providing a register tree, for example a servo drive                                                                     |
+| <img src="gitbook/Pictures/100000010000001000000010AB22FA745AD1A8F2.png"                                         
+ style="width:0.42cm;height:0.42cm" /> <img src="gitbook/Pictures/1000000100000010000000108621CD3A8466C083.png"    
+ style="width:0.423cm;height:0.423cm" />                                                                           | Register Node          | Collection of registers with similar purpose (array of similar structures)                                                            |
+| <img src="gitbook/Pictures/10000001000000100000001021656958D347E96B.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Register               | Representing a parameter, a command, a signal or information                                                                          |
+| <img src="gitbook/Pictures/100000010000001000000010DE168281BBDD696A.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Register Array         | An array of registers of the same type                                                                                                |
+| <img src="gitbook/Pictures/1000000100000010000000108C92A8DAC7412EA9.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Tama Manager           | Allows to assign, download and enable **Tama** programs                                                                               |
+| <img src="gitbook/Pictures/100000010000001000000010BF7749A038E43931.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Module                 | User interfaces which simplify the register access e.g. for the tuning of the axes.                                                   |
+| <img src="gitbook/Pictures/100000010000001000000010297828A6A3E1230E.png"                                         
+ style="width:0.42cm;height:0.42cm" />                                                                             | Option Module          | Option module for additional input and output.                                                                                        |
 
 ****Note ****If a connected device is not listed in the **Topology
 Tree**, execute a restart (**File \| Restart**).
@@ -274,8 +256,7 @@ until the desired register gets visible. The registers may be hidden, to
 reduce vertical amount of space occupied by the tree. In order to show
 them, click on the ****Show/Hide individual registers**** Button .
 
-<img
-src="gitbook/Pictures/Pictures/100000000000036A00000246D5BFE9D7A9533581.png"
+<img src="gitbook/Pictures/100000000000036A00000246D5BFE9D7A9533581.png"
 title="fig:" style="width:18.002cm;height:11.989cm"
 alt=" Figure 3: TAM Topology Tree and Registers" />A click on a register
 node or a register opens the ****Register****** **tab in the tab panel.
@@ -308,14 +289,12 @@ background. This state remains until it gets committed.
 
 Parameter handling buttons:
 
-|                                                                              |                |                                                                    |
-|------------------------------------------------------------------------------|----------------|--------------------------------------------------------------------|
-|  <img                                                                        
- src="gitbook/Pictures/Pictures/1000000100000010000000101F11ECF580CA628E.png"  
- style="width:0.42cm;height:0.42cm" />                                         | ****Commit**** | Updates the drive with the values of the prepare fields.           |
-|  <img                                                                        
- src="gitbook/Pictures/Pictures/100000010000001000000010D30201F0070FFE0E.png"  
- style="width:0.42cm;height:0.42cm" />                                         | ****Revert**** | Reverts the prepare fields with the values from the actual fields. |
+|                                                                           |                |                                                                    |
+|---------------------------------------------------------------------------|----------------|--------------------------------------------------------------------|
+|  <img src="gitbook/Pictures/1000000100000010000000101F11ECF580CA628E.png" 
+ style="width:0.42cm;height:0.42cm" />                                      | ****Commit**** | Updates the drive with the values of the prepare fields.           |
+|  <img src="gitbook/Pictures/100000010000001000000010D30201F0070FFE0E.png" 
+ style="width:0.42cm;height:0.42cm" />                                      | ****Revert**** | Reverts the prepare fields with the values from the actual fields. |
 
 Setting a parameter value:
 
@@ -385,8 +364,7 @@ The axes are identified by the register Axes\[\].Information.AxisName.
 Initially the station name is added in front of AxisName, but will be
 removed when the axis name is changed the first time.
 
-<img
-src="gitbook/Pictures/Pictures/1000000100000172000000D0270B32677DE474B7.png"
+<img src="gitbook/Pictures/1000000100000172000000D0270B32677DE474B7.png"
 title="fig:" style="width:9.264cm;height:5.211cm"
 alt="Figure 4: The axis monitor shows the state for each axis and allows to acknowledge pending errors. Additionally, the emergency buttons are provided." />The
 axis name can be changed by selecting the axis name in the axis monitor
@@ -436,14 +414,12 @@ Restart****).
 
 The axis monitor also provides two emergency buttons:
 
-|                                                                              |                                                                                                                                                                                                                                                                                                                                    |
-|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <img                                                                         
- src="gitbook/Pictures/Pictures/100000010000003000000030C957B26EE2485D8D.png"  
- style="width:0.72cm;height:0.72cm" />                                         | **Emergency switch off**: All power sections will switch off immediately if this button is pressed. The axes are then released and may move until the kinetic or potential energy is dissipated. Pressing the emergency button will cause an external error which has to be reset e.g. by pressing the  Acknowledge Errors button. |
-| <img                                                                         
- src="gitbook/Pictures/Pictures/1000000100000030000000303B422D589D13367C.png"  
- style="width:0.718cm;height:0.718cm" />                                       | **Emergency Stop**: If emergency stop is pressed, the path planner will issue a stop move based on the emergency parameters. This brings all active axis to a halt. The axes will remain enabled.                                                                                                                                  |
+|                                                                          |                                                                                                                                                                                                                                                                                                                                    |
+|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img src="gitbook/Pictures/100000010000003000000030C957B26EE2485D8D.png" 
+ style="width:0.72cm;height:0.72cm" />                                     | **Emergency switch off**: All power sections will switch off immediately if this button is pressed. The axes are then released and may move until the kinetic or potential energy is dissipated. Pressing the emergency button will cause an external error which has to be reset e.g. by pressing the  Acknowledge Errors button. |
+| <img src="gitbook/Pictures/1000000100000030000000303B422D589D13367C.png" 
+ style="width:0.718cm;height:0.718cm" />                                   | **Emergency Stop**: If emergency stop is pressed, the path planner will issue a stop move based on the emergency parameters. This brings all active axis to a halt. The axes will remain enabled.                                                                                                                                  |
 
 ****Caution**** ****Switching off the power section of a drive during
 motion may damage the mechanical axis.
@@ -519,8 +495,7 @@ number of plots depending on the sampling time and the register type:
 | 0.1     | 80     | 40     |
 | 0.1 · n | 80 · n | 40 · n |
 
-<img
-src="gitbook/Pictures/Pictures/10000001000001DB000000B8F599838852437795.png"
+<img src="gitbook/Pictures/10000001000001DB000000B8F599838852437795.png"
 title="fig:" style="width:10.68cm;height:4.03cm"
 alt=" Figure 6: Scoping Error" />When the maximal number of plots is
 exceeded, an error message will pop up (Figure ). In this case the
@@ -540,8 +515,7 @@ maximum amount of registers which can be plotted.
 
 ### Sampling Duration
 
-<img
-src="gitbook/Pictures/Pictures/10000000000001EF0000010497419817D6407FB0.png"
+<img src="gitbook/Pictures/10000000000001EF0000010497419817D6407FB0.png"
 title="fig:" style="width:9.8cm;height:5.249cm"
 alt=" Figure 7: Sampling duration and multiple Y axes." />The sampling
 duration can be set by clicking on the minimum/maximum label of the time
@@ -588,11 +562,11 @@ context menu of the axis**** as shown in ****Figure**** ****.****
 <tbody>
 <tr class="odd">
 <td><img
-src="gitbook/Pictures/Pictures/10000000000001A3000001057372D14F0E3CEE30.png"
+src="gitbook/Pictures/10000000000001A3000001057372D14F0E3CEE30.png"
 title="fig:" style="width:8.405cm;height:5.233cm"
 alt=" Figure 8: Changing the Y axis range." /></td>
 <td><img
-src="gitbook/Pictures/Pictures/100000000000009F000000664DF7FF83AD993E64.png"
+src="gitbook/Pictures/100000000000009F000000664DF7FF83AD993E64.png"
 title="fig:" style="width:4.2cm;height:2.701cm" alt=" " /></td>
 </tr>
 </tbody>
@@ -609,8 +583,7 @@ repeat mode or set the parameter ****General \> ScopeCharting****** **to
 list as a trigger source. The following steps are required to setup a
 signal trigger:
 
-1.  <img
-    src="gitbook/Pictures/Pictures/1000000000000090000000A5A907D25EA2398D92.png"
+1.  <img src="gitbook/Pictures/1000000000000090000000A5A907D25EA2398D92.png"
     title="fig:" style="width:3.81cm;height:4.366cm"
     alt=" Figure 10: Trigger mode." />Select a trigger mode from the
     ****Select t****rigger****s**** pull-down menu (Figure ):
@@ -632,12 +605,9 @@ signal trigger:
 
 |                                                                                                          |                                                                                                                                                                              |                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <img                                                                                                     
- src="gitbook/Pictures/Pictures/10000001000001120000019C31AFCBBF40D9D10A.png"                              
- style="width:4.987cm;height:7.47cm" />                                                                    | <img                                                                                                                                                                         
-                                                                                                            src="gitbook/Pictures/Pictures/10000001000001130000016AFB40B796A2B434FB.png"                                                                                                  
-                                                                                                            style="width:5.593cm;height:7.361cm" />                                                                                                                                       | <img                                                                                                                                                                                                           
-                                                                                                                                                                                                                                                                                           src="gitbook/Pictures/Pictures/100000000000018100000208D8012CDD8A5BCCED.png"                                                                                                                                    
+| <img src="gitbook/Pictures/10000001000001120000019C31AFCBBF40D9D10A.png"                                 
+ style="width:4.987cm;height:7.47cm" />                                                                    | <img src="gitbook/Pictures/10000001000001130000016AFB40B796A2B434FB.png"                                                                                                     
+                                                                                                            style="width:5.593cm;height:7.361cm" />                                                                                                                                       | <img src="gitbook/Pictures/100000000000018100000208D8012CDD8A5BCCED.png"                                                                                                                                       
                                                                                                                                                                                                                                                                                            style="width:6.435cm;height:9.126cm" />                                                                                                                                                                         |
 | Figure 11: General tab of the scope. The most commonly used parameters are Default Sampling and YAxes*.* | Figure 12: Plot tab of the scope. The most commonly used parameters are LineColor, Name and Sampling Time*. Selecting several plots allows for configuring them altogether.* | *Figure : Repeat and trigger buttons. A horizontal draggable line marks the trigger level, the vertical draggable line defines the time of the trigger event. The *Plot* property defines the trigger source.* |
 
@@ -665,8 +635,7 @@ The zoom pull-down menu (Figure ) allows to set the desired zoom
 behavior (horizontal/vertical/both) and provides additional commands
 related to zooming:
 
--   <img
-    src="gitbook/Pictures/Pictures/10000000000000AC000000EB0E11DBCFCF5DF3E9.png"
+-   <img src="gitbook/Pictures/10000000000000AC000000EB0E11DBCFCF5DF3E9.png"
     title="fig:" style="width:4.551cm;height:6.218cm"
     alt=" Figure 14: Zoom menu items." />**Zoom to plots:** Sets the
     plot axes to the actual limit values of the curves.
@@ -705,8 +674,7 @@ Plots as Image****…****. It is useful to customize the prints in advance
 by changing properties of the ****Printing**** category in the ****Scope
 ****\> ****General**** tab.
 
-### <img
-src="gitbook/Pictures/Pictures/100000000000021F000002042E73AE3BB31F2EE7.png"
+### <img src="gitbook/Pictures/100000000000021F000002042E73AE3BB31F2EE7.png"
 title="fig:" style="width:12.46cm;height:12.4cm"
 alt="Figure 15: The Scope Menu The first section of the scope menu is related to zooming and panning. The next section is used to load and save plot data followed by an analysis section and a section to reset the scope. The last section handles the configuration of the scope." />Loading Templates
 
@@ -834,8 +802,7 @@ To reset the drive to default values, disable persistence and power
 cycle the drive.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/1000000000000511000001D5A7270B745203C0E2.png"
+<img src="gitbook/Pictures/1000000000000511000001D5A7270B745203C0E2.png"
 style="width:15cm;height:5.424cm"
 alt="Figure 17: Persistent TAM Configuration" />
 <figcaption aria-hidden="true">Figure 17: Persistent TAM
@@ -880,8 +847,7 @@ required (see also Figure ):
     dialog.
 2.  After choosing a file name and clicking the ****Save**** button the
     progress window will pop up which shows the progress.
-3.  <img
-    src="gitbook/Pictures/Pictures/100000000000047B000002605DEAFFE08DCF9921.png"
+3.  <img src="gitbook/Pictures/100000000000047B000002605DEAFFE08DCF9921.png"
     title="fig:" style="width:17.801cm;height:9.435cm"
     alt=" Figure 18: Save TAM Configuration on PC" />In case of an
     unexpected exception, the process may be started again by using the
@@ -901,8 +867,7 @@ The following steps are required to load a **TAM Configuration**:
 4.  In case of an unexpected exception, the process may be started again
     by using the ****Restart**** button.
 
-<img
-src="gitbook/Pictures/Pictures/10000001000004E8000002168C728D838ABA6EAE.png"
+<img src="gitbook/Pictures/10000001000004E8000002168C728D838ABA6EAE.png"
 style="width:10.146cm;height:4.309cm" />
 
 Figure 19: Configuration download progress window
@@ -941,8 +906,7 @@ the physically existing stations according to the following scheme:
         the** TAM Configuration**.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/100000000000033E000001AAAC9F9D8934A75F45.png"
+<img src="gitbook/Pictures/100000000000033E000001AAAC9F9D8934A75F45.png"
 style="width:17.801cm;height:9.135cm"
 alt=" Figure 20: Resolve configuration mismatch." />
 <figcaption aria-hidden="true"><br />
@@ -954,8 +918,7 @@ Figure 20: Resolve configuration mismatch.</figcaption>
 |                                                                                                                                                |     |                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------|-----|---------------------------------------------------------------------------------------|
 | It is also possible to open a **TAM **C**onfiguration** file directly with the context menu of the *\*.TAMcfg* file (right click on the file): |     | <figure>                                                                              
-                                                                                                                                                        <img                                                                                   
-                                                                                                                                                        src="gitbook/Pictures/Pictures/1000000000000106000000944DFE537487FF83AF.png"           
+                                                                                                                                                        <img src="gitbook/Pictures/1000000000000106000000944DFE537487FF83AF.png"               
                                                                                                                                                         style="width:5.001cm;height:2.82cm"                                                    
                                                                                                                                                         alt="Figure 21: Context menu of a TAM configuration file having extension .TAMcfg" />  
                                                                                                                                                         <figcaption aria-hidden="true">Figure 21: Context menu of a TAM                        
@@ -1000,8 +963,7 @@ page:
 4.  Download the *\*.zip* file with the firmware package and unzip the
     file.
 
-<img
-src="gitbook/Pictures/Pictures/100000000000023C0000013D270BBEAF775E077F.png"
+<img src="gitbook/Pictures/100000000000023C0000013D270BBEAF775E077F.png"
 title="fig:" style="width:11.788cm;height:6.537cm"
 alt="Figure 22: Station Properties. The product information shows the type, the product revision and the firmware version. " />Execute
 the following steps to download the firmware:
@@ -1019,8 +981,7 @@ the following steps to download the firmware:
 -   After the download succeeded, press ****Close**** to close the
     window.
 
-<img
-src="gitbook/Pictures/Pictures/10000000000001B0000000D9825F1F5776E84F6E.png"
+<img src="gitbook/Pictures/10000000000001B0000000D9825F1F5776E84F6E.png"
 title="fig:" style="width:10.673cm;height:5.376cm"
 alt="Figure 23: Firmware download via the station node." />*Tria-Link*
 adapters don't have a station node, they display the ****Update Firmware
@@ -1071,7 +1032,7 @@ from the drive to the computer by clicking <strong><strong>Download
 </strong><strong>Tama </strong>a<strong>ssembly</strong><strong>...
 </strong></strong>in the context menu.</p></td>
 <td><img
-src="gitbook/Pictures/Pictures/10000000000001A90000016801E9EBA773C7E1A7.png"
+src="gitbook/Pictures/10000000000001A90000016801E9EBA773C7E1A7.png"
 title="fig:" style="width:8.047cm;height:6.814cm"
 alt="Figure 24: Context Menu of the Tama Manager. The menu entries also indicate whether the virtual machines are currently enabled or not." /></td>
 </tr>
@@ -1081,7 +1042,7 @@ alt="Figure 24: Context Menu of the Tama Manager. The menu entries also indicat
 </tr>
 <tr class="odd">
 <td><img
-src="gitbook/Pictures/Pictures/100000000000022A0000014E779F554B5830AA31.png"
+src="gitbook/Pictures/100000000000022A0000014E779F554B5830AA31.png"
 title="fig:" style="width:14.66cm;height:8.839cm"
 alt="Figure 25: Tama assembly download dialog containing helpful information" /></td>
 <td></td>
@@ -1161,8 +1122,7 @@ device while reading and writing of the registers is handled by the
 module.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/100000000000050D0000013B4D83A3A19F1ABDB3.png"
+<img src="gitbook/Pictures/100000000000050D0000013B4D83A3A19F1ABDB3.png"
 style="width:17.801cm;height:4.336cm"
 alt=" Figure 26: Axis module assignment." />
 <figcaption aria-hidden="true"><br />
@@ -1185,8 +1145,7 @@ click ****Remove module****.
 
 ## <span id="anchor-19"></span>Axis Module
 
-<img
-src="gitbook/Pictures/Pictures/10000000000000B60000006F76D7FE5F3FBE568D.png"
+<img src="gitbook/Pictures/10000000000000B60000006F76D7FE5F3FBE568D.png"
 title="fig:" style="width:4.815cm;height:2.937cm"
 alt=" Figure 27: Unfolded Axis Group" />The axis module can be used to
 execute basic movements of the axis. For dual-axis drives an ****Axis
@@ -1196,8 +1155,7 @@ is then shown in the tab panel in ****Module \> View ****(Figure ). If
 the ****Axis**** node is expanded further, additional tools like **Bode
 Tuning** are accessible.
 
-<img
-src="gitbook/Pictures/Pictures/2000011800004A3800002450B400FF21821E0D1C.svm"
+<img src="gitbook/Pictures/2000011800004A3800002450B400FF21821E0D1C.svm"
 title="fig:" style="width:15.813cm;height:7.781cm" />The axis module
 offers the following controls to interact with the axis (see also Figure
 ):
@@ -1302,8 +1260,7 @@ Find the ****Bode Tuning**** module in the ****Axis Group**** module****
     modification on the Bode plot.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/100000010000048F00000115A2AD6B64A37BCAAE.png"
+<img src="gitbook/Pictures/100000010000048F00000115A2AD6B64A37BCAAE.png"
 style="width:15.333cm;height:3.641cm" />
 </figure>
 
@@ -1353,8 +1310,7 @@ pressure must be applied.
 
 ### Measurement Setup
 
-<img
-src="gitbook/Pictures/Pictures/10000001000006240000048C4C32383AA387BEE0.png"
+<img src="gitbook/Pictures/10000001000006240000048C4C32383AA387BEE0.png"
 title="fig:" style="width:17.801cm;height:13.044cm" />To start the
 measurement click the ****Measure ****Bode ****Plot…**** button (Figure
 ). This opens the window with the application as shown in Figure .
@@ -1424,8 +1380,7 @@ the amplitude of the output signal is adapted in such a way that
 amplitudes of the states (voltage, current and position) are as big as
 possible but do not exceed the specified maximum.
 
-<img
-src="gitbook/Pictures/Pictures/10000000000002BD000001A7525DAC41BCC2E20A.png"
+<img src="gitbook/Pictures/10000000000002BD000001A7525DAC41BCC2E20A.png"
 title="fig:" style="width:13.527cm;height:8.16cm"
 alt="Figure 31: Bode measurement result." />Once the measurement is
 done, the ****Bode Measurement Result**** window is opened (Figure )
@@ -1506,8 +1461,7 @@ measurements in the editor:
 
 ### Editor Window
 
-<img
-src="gitbook/Pictures/Pictures/1000000100000554000004D1106182CF15CD20A1.png"
+<img src="gitbook/Pictures/1000000100000554000004D1106182CF15CD20A1.png"
 title="fig:" style="width:17.801cm;height:16.071cm"
 alt=" Figure 32: Bode Tuning editor with current controller and Bode plot selected." />The
 editor consists of the following items (see also figure ):
@@ -1553,8 +1507,7 @@ editor consists of the following items (see also figure ):
         -   Green: calculated closed loop frequency response based on
             the measurement and the controller parameters
 
-    -   <img
-        src="gitbook/Pictures/Pictures/10000001000003E8000000E98E24322844B1A338.png"
+    -   <img src="gitbook/Pictures/10000001000003E8000000E98E24322844B1A338.png"
         title="fig:" style="width:11.684cm;height:2.722cm"
         alt="Figure 33: Signal colors according to transfer functions in the control loop." />****Nyquist****:
         The red curve shows the open loop frequency response in the
@@ -1566,8 +1519,7 @@ editor consists of the following items (see also figure ):
     phase at the cross-hair location. To select a different signal, the
     cross-hair has to be dragged to the new signal. At the beginning,
     the cursor might be hidden at the boundaries of the graph.
-2.  <img
-    src="gitbook/Pictures/Pictures/10000000000001D500000071C9A208E68806251D.png"
+2.  <img src="gitbook/Pictures/10000000000001D500000071C9A208E68806251D.png"
     title="fig:" style="width:12.383cm;height:2.99cm"
     alt="Figure 34: When opening Bode measurements, you can choose whether to append new data, or to replace all measurements currently shown in the Bode tuning window." />****Legend****:
     The first three legend items show the colors for controller
@@ -1688,8 +1640,7 @@ commissioning an axis:
 
 ### <span id="anchor-48"></span>Naming of Stations and Axes
 
-<img
-src="gitbook/Pictures/Pictures/100000000000010C000000F547422E1FF2E4AAEE.png"
+<img src="gitbook/Pictures/100000000000010C000000F547422E1FF2E4AAEE.png"
 title="fig:" style="width:6.001cm;height:5.241cm"
 alt=" Figure 35: Example for renaming of stations and axes." />To easily
 identify the related physical axis, it is recommended to change the
@@ -1772,8 +1723,7 @@ This node contains registers related to the motor.
     -   For more information of how to connect the brake see the
         corresponding hardware manual.
 
--   <img
-    src="gitbook/Pictures/Pictures/1000000000000514000002EB3117ED251E92BFC7.png"
+-   <img src="gitbook/Pictures/1000000000000514000002EB3117ED251E92BFC7.png"
     title="fig:" style="width:13cm;height:7.47cm"
     alt=" Figure 36: BrakeHoldTime: Timing diagram of the brake output with BrakeReleaseAction = SetOut1 and BrakeHoldTime = 1s." />BrakeHoldTime:
     If there is a significant delay between the instance when the brake
@@ -2024,8 +1974,7 @@ Figure shows the diagram of the feed forward block.
     required, the parameter can then be set later based on measurements.
 
     <figure>
-    <img
-    src="gitbook/Pictures/Pictures/10000000000005C4000002F0329128CE38E57942.png"
+    <img src="gitbook/Pictures/10000000000005C4000002F0329128CE38E57942.png"
     style="width:12.285cm;height:5.99cm" alt=" " />
     <figcaption aria-hidden="true"><br />
     </figcaption>
@@ -2072,8 +2021,7 @@ encoder signal, e.g. for dual loop-control.
 
     -   For a rotational encoder with 2048 lines and with the position
         unit in degree, the Pitch is 360°/2048 = 0.17578125.
-    -   <img
-        src="gitbook/Pictures/Pictures/10000000000004A0000001FDF536D634983A6962.png"
+    -   <img src="gitbook/Pictures/10000000000004A0000001FDF536D634983A6962.png"
         title="fig:" style="width:10.68cm;height:5.17cm" alt=" " />For a
         linear encoder the value for Pitch is taken from the data sheet
         of the encoder, e.g. 0.02 for an encoder with a pitch of 20um
@@ -2090,8 +2038,7 @@ contouring error during slow motion. This can for example be caused by
 the backlash of a spindle drive.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/100000000000037C00000121DBB69784797DF42B.png"
+<img src="gitbook/Pictures/100000000000037C00000121DBB69784797DF42B.png"
 style="width:12cm;height:3.87cm"
 alt=" Figure 39: Backlash compensation." />
 <figcaption aria-hidden="true"><br />
@@ -2187,8 +2134,7 @@ configured:
         aligned by chance, this causes a movement of the rotor. This
         method must be used for the initial commissioning of synchronous
         AC-motors as it does not require a tuned position controller.
-    -   <img
-        src="gitbook/Pictures/Pictures/100000000000056F000001B024678BE526934CDA.png"
+    -   <img src="gitbook/Pictures/100000000000056F000001B024678BE526934CDA.png"
         title="fig:" style="width:12.46cm;height:4.623cm" alt=" " />AngleSearch:
         With this method, the electrical direction of the current is
         controlled in such a way, that the motor does not move during
@@ -2257,8 +2203,7 @@ parameters can be used to configure the oscillation:
 
 -   SineAmplitude: Amplitude of the angular oscillation. Typical values
     are 0.1-0.5rad.
--   <img
-    src="gitbook/Pictures/Pictures/1000000000000479000002F6D354A4D6A0B9369A.png"
+-   <img src="gitbook/Pictures/1000000000000479000002F6D354A4D6A0B9369A.png"
     title="fig:" style="width:13cm;height:8.691cm"
     alt=" Figure 41: Phasing sequence with Type = RotorAlignment." />SineFrequency:
     Frequency of the angular oscillation. Typical value is 10Hz.
@@ -2363,8 +2308,7 @@ structure. The controller structure supports cascaded control with a
 **PI** controller for the current and two **PIDT1** controllers for the
 position.
 
-<img
-src="gitbook/Pictures/Pictures/10000000000004FA000002492F5C4F454D0C5E88.png"
+<img src="gitbook/Pictures/10000000000004FA000002492F5C4F454D0C5E88.png"
 title="fig:" style="width:17.801cm;height:8.174cm"
 alt=" Figure 42: Block-diagram of the controller structure with current controller and position controller (simplified)." />For
 an axis with one encoder, only Controller\[0\] is used. If a second
@@ -2379,11 +2323,9 @@ The controller structure consists of a PI-controller with proportional
 gain Kr and integral time constant Tn. Additionally, the integral term
 can be restricted to prevent integral wind-up.
 
-<img
-src="gitbook/Pictures/Pictures/100000000000053C000000CA06AFBB297225ABD4.png"
+<img src="gitbook/Pictures/100000000000053C000000CA06AFBB297225ABD4.png"
 title="fig:" style="width:17.801cm;height:2.683cm"
-alt=" Figure 43: Block-diagram of the PI current controller (simplified)." /><img
-src="gitbook/Pictures/Pictures/10000000000005C6000001EDB6DBF3C92C6A7E30.png"
+alt=" Figure 43: Block-diagram of the PI current controller (simplified)." /><img src="gitbook/Pictures/10000000000005C6000001EDB6DBF3C92C6A7E30.png"
 title="fig:" style="width:11.564cm;height:3.858cm"
 alt="Figure 44: Block-diagram of the voltage feed forward." />In some
 cases the dynamic of the current loop can be improved by applying
@@ -2448,8 +2390,7 @@ Tuning criteria in **Bode** plot view:
 
 1)  The phase-margin of **H*<sub>*o*</sub>*(f) **should be in range of
     50° to 70°.[^9]
-2)  <img
-    src="gitbook/Pictures/Pictures/100000000000038D000003A81003D842E8C67C73.png"
+2)  <img src="gitbook/Pictures/100000000000038D000003A81003D842E8C67C73.png"
     title="fig:" style="width:8.901cm;height:8.35cm"
     alt=" Figure 45: Tuning criteria in Bode view for the current controller." />The
     amplitude of the **H*<sub>*c*</sub>*(f) **should not exceed 1dB
@@ -2459,8 +2400,7 @@ Tuning criteria in ****Nyquist**** plot view (Figure ):
 
 1)  **The displayed complex curve of **H*<sub>*o*</sub>*(f) **must be
     outside of the 1.1 circle but as close to it as possible.**
-2)  <img
-    src="gitbook/Pictures/Pictures/100000000000038B000003A700C65B3A8FCB37C2.png"
+2)  <img src="gitbook/Pictures/100000000000038B000003A700C65B3A8FCB37C2.png"
     title="fig:" style="width:8.901cm;height:8.34cm"
     alt=" Figure 46: Tuning criteria in Nyquist view for the current controller." />**Following
     the** **complex curve **H*<sub>*o*</sub>*(f) **from low frequency to
@@ -2483,8 +2423,7 @@ Rule of thumb for an initial setup of the current controller:
 |     |
 
 1.  Use the criteria above to further optimize the current controller.
-2.  <img
-    src="gitbook/Pictures/Pictures/10000000000004B9000002574503788905B6552D.png"
+2.  <img src="gitbook/Pictures/10000000000004B9000002574503788905B6552D.png"
     title="fig:" style="width:17.801cm;height:8.481cm"
     alt=" Figure 47: Tuning of the current controller. The figure to the left shows the bode plot with Kr = 1 and Tn=0. A phase margin of 60° (angle = -120°) is reached at 2188Hz with a magnitude of -28.6dB. Based on the rule of thumb this would result in Kr = 27 and Tn = 0.0007. The figure to the right shows the further optimized transfer function with Kr=23 and Tn=0.0001." />Press
     the ****C**ommit** button to activate the parameter changes on the
@@ -2492,8 +2431,7 @@ Rule of thumb for an initial setup of the current controller:
 
 ### <span id="anchor-55"></span>Position Controller Structure
 
-<img
-src="gitbook/Pictures/Pictures/10000000000005380000013DB80EEC5345D9BF6F.png"
+<img src="gitbook/Pictures/10000000000005380000013DB80EEC5345D9BF6F.png"
 title="fig:" style="width:17.801cm;height:4.15cm"
 alt=" Figure 48: Block-diagram of the PIDT1 position controller." />Figure
 shows the controller structure of the position controller. It consists
@@ -2503,8 +2441,7 @@ restricted with the low pass time constant T1. With the
 IntegratorOutputLimit wind-up of the integral can be avoided.
 Additionally five filters of second order can be configured.
 
-<img
-src="gitbook/Pictures/Pictures/100000000000053B000001F618860501C702CF66.png"
+<img src="gitbook/Pictures/100000000000053B000001F618860501C702CF66.png"
 title="fig:" style="width:17.801cm;height:6.682cm"
 alt=" Figure 49: Block-diagram of the current feed forward." />Figure
 shows the block diagram for current feed forward. Beside the feed
@@ -2561,8 +2498,7 @@ behavior of the controller as all structures are internally transformed
 to the ****Additive, Gain**** structure, but it allows to select the
 structure which is most suitable for the tuning.
 
--   <img
-    src="gitbook/Pictures/Pictures/200000090000217E00001AA108E55C907EB94151.svm"
+-   <img src="gitbook/Pictures/200000090000217E00001AA108E55C907EB94151.svm"
     title="fig:" style="width:8.271cm;height:6.366cm"
     alt="Figure 50: Controller Parameter with Additive, Gain selected." />****Additive,
     Gain****:  
@@ -2575,8 +2511,7 @@ structure which is most suitable for the tuning.
     ****Kd**** and filtered with a low pass filter with time constant
     ****T1 ****(see also Figure ).
 
--   <img
-    src="gitbook/Pictures/Pictures/200000090000219300001A8CF86CB837EC13D20C.svm"
+-   <img src="gitbook/Pictures/200000090000219300001A8CF86CB837EC13D20C.svm"
     title="fig:" style="width:8.359cm;height:6.311cm" />****Additive,
     Time Constant****:  
     Figure shows the parameters used to configure the **PIDT1**
@@ -2643,8 +2578,7 @@ with the following tuning criteria in ****Bode**** plot view:
 
 1)  The phase-margin of *G*<sub>*o*</sub>*(f)* should be in range of 30°
     to 50°.
-2)  <img
-    src="gitbook/Pictures/Pictures/100000000000038B0000032992C9389B6D9C47F8.png"
+2)  <img src="gitbook/Pictures/100000000000038B0000032992C9389B6D9C47F8.png"
     title="fig:" style="width:8.901cm;height:8.77cm"
     alt=" Figure 54: Tuning criteria in Bode view for the position controller." />The
     amplitude of the **G*<sub>*c*</sub>*(f) **should not exceed
@@ -2656,8 +2590,7 @@ Tuning criteria in ****Nyquist**** plot view:
 1)  **The displayed complex curve of **G*<sub>*o*</sub>*(f) **must be
     outside of the 1.**3 **(robust)** to 1.6 **(advanced)** circle but
     as close to it as possible.**
-2)  <img
-    src="gitbook/Pictures/Pictures/10000000000003330000032A0839AE4E50227A3B.png"
+2)  <img src="gitbook/Pictures/10000000000003330000032A0839AE4E50227A3B.png"
     title="fig:" style="width:8.901cm;height:8.38cm"
     alt="Figure 55: Tuning criteria in Nyquist view for the position controller." />**Following
     the** **complex curve **H*<sub>*o*</sub>*(f) **from low frequency to
@@ -2716,8 +2649,7 @@ Rule of thumb for an initial setup of the position controller:
     Figure shows a tuned controller and indicates qualitatively the
     effect of the parameter changes on *G<sub>o</sub>(f)* in the
     **Bode** and **Nyquits** plot.
-2.  <img
-    src="gitbook/Pictures/Pictures/100000000000065D000002D5B63D44A27513D129.png"
+2.  <img src="gitbook/Pictures/100000000000065D000002D5B63D44A27513D129.png"
     title="fig:" style="width:17.801cm;height:7.451cm"
     alt="Figure 56: Tuned position controller with a gain crossover frequency fgc of 500Hz and a phase margin of 48.2°. The black arrows indicate the effect of parameter changes in Bode and Nyquist plot (qualitatively)." />Press
     the ****C**ommit** button to activate the parameter changes on the
@@ -2790,8 +2722,7 @@ the **Highpass2**. As a simple approach, set the parameters as follows:
  \end{matrix}$$                                           
  .                                                        |
 
-<img
-src="gitbook/Pictures/Pictures/10000000000001F900000194FD74434CFC8632DF.png"
+<img src="gitbook/Pictures/10000000000001F900000194FD74434CFC8632DF.png"
 title="fig:" style="width:12cm;height:9.67cm"
 alt=" Figure 57: The Notch2 filter as product of a Highpass2 with fd=1and Dd= 0.2 and a Lowpass2 with fn=1 and Dd=0.01." />When
 **Advanced** mode is not checked in the **Filter Parameters** panel,
@@ -2803,8 +2734,7 @@ frequency. This phase drop may reduce the phase margin and could reduce
 the stability of the controller. Therefore, the stability of the
 controller has to be checked after a filter is added or modified.
 
-<img
-src="gitbook/Pictures/Pictures/100000000000036F000001F3A4D8FB6425DE6D27.png"
+<img src="gitbook/Pictures/100000000000036F000001F3A4D8FB6425DE6D27.png"
 title="fig:" style="width:17.801cm;height:9.661cm"
 alt=" Figure 58: Resonance at 2000Hz which causes an instability of the controller-loop." />Figure
 shows a resonance which causes an instability at 2000Hz. In the Nyquist
@@ -2840,8 +2770,7 @@ based on the Bode Measurement:
  $$\mathit{FeedForwardAcceleration} = \frac{1}{10^{\frac{A}{20}}{({2\pi f})}^{2}}$$  |
 
 1.  Press the Revert button to reset the parameters.
-2.  <img
-    src="gitbook/Pictures/Pictures/10000000000003FD0000014C6241A249B261BA37.png"
+2.  <img src="gitbook/Pictures/10000000000003FD0000014C6241A249B261BA37.png"
     title="fig:" style="width:17.801cm;height:5.787cm"
     alt=" Figure 60: Calculation of the acceleration feed forward. With a measured amplitude of -65.3dB at 29.8Hz, the acceleration feed forward is set to 0.052." />Set
     and commit the calculated feed forward value in the register
@@ -2913,8 +2842,7 @@ time (see next item).
     position gains Kr, Ki and Kd.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/10000000000002B20000019ADFB23B259A8F8DCC.png"
+<img src="gitbook/Pictures/10000000000002B20000019ADFB23B259A8F8DCC.png"
 style="width:13.471cm;height:7.999cm"
 alt="Figure 61: Verification of motor direction and magnetic pitch: The motor direction is correct as the signal of Angle and Position show the same direction. The magnetic pitch is 20 mm according to the measurement." />
 <figcaption aria-hidden="true">Figure 61: Verification of motor
@@ -3020,8 +2948,7 @@ stability and behavior of the axis and the settings of the feed forward.
     and B. Activate the ****Loop After**** check-box and set a wait time
     of about 500ms. Reduce the dynamic by adjusting the ****Acc.**** and
     ****Vel.**** values in the ****Axis Module.****
-3.  <img
-    src="gitbook/Pictures/Pictures/1000000100000418000001DDDA0B0179C51C310B.png"
+3.  <img src="gitbook/Pictures/1000000100000418000001DDDA0B0179C51C310B.png"
     title="fig:" style="width:17.801cm;height:8.079cm"
     alt=" Figure 62: The Bode plot shows an insufficient phase margin at about 200Hz which is caused by a too aggressive setup of the integral. In time domain this causes oscillations of the position at 200Hz." />Start
     the scope and execute moves by pressing ****Move AB****. Check the
@@ -3054,8 +2981,7 @@ also [5.4.6](#anchor-53)):
     of about 500ms.
 3.  Start the scope and execute moves by pressing ****Move AB****.
 
-<img
-src="gitbook/Pictures/Pictures/10000000000004DC000001BC59D6B10B37CA5DC9.png"
+<img src="gitbook/Pictures/10000000000004DC000001BC59D6B10B37CA5DC9.png"
 title="fig:" style="width:17.801cm;height:6.354cm"
 alt=" Figure 64: Feed forward signal with only acceleration feed forward (left) and with additional velocity feed forward (right)." />If
 the acceleration feed forward is correctly configured, the
@@ -3251,8 +3177,7 @@ commutation angle runs from -pπ to pπ, where p is the number of pole
 pairs.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/10000000000001FD000001AD7902E719A6321FB5.png"
+<img src="gitbook/Pictures/10000000000001FD000001AD7902E719A6321FB5.png"
 style="width:6.001cm;height:5.061cm"
 alt=" Figure 65: Commutation angle for a rotor with one pole pair." />
 <figcaption aria-hidden="true"><br />
@@ -3287,8 +3212,7 @@ There are three options to access the **Tria-**L**ink**:
 The following section describes the first two methods in detail.
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/1000000100000B8900000711294234FFAF3DE19B.png"
+<img src="gitbook/Pictures/1000000100000B8900000711294234FFAF3DE19B.png"
 style="width:9.999cm;height:6.121cm"
 alt=" Figure 66: System with observer and USB observer" />
 <figcaption aria-hidden="true"><br />
@@ -3321,8 +3245,7 @@ based *Tria-Link* adapter card (typically into a 2<sup>nd</sup> PC) and
 integrate the adapter card into the *Tria-Link* ring. Any type of
 *Tria-Link* adapter card can be used in this case.
 
-<img
-src="gitbook/Pictures/Pictures/20000007000023A900001C1E6AD8193481255539.svm"
+<img src="gitbook/Pictures/20000007000023A900001C1E6AD8193481255539.svm"
 title="fig:" style="width:7.059cm;height:5.784cm"
 alt="Figure 67: Adapter configuration" />As there is no dedicated
 observer adapter card, the adapter card has to be configured as observer
@@ -3341,8 +3264,7 @@ have to be executed:
 # <span id="anchor-46"></span>Flow Charts
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/10000001000006EC00000C98F7005558292A8B45.png"
+<img src="gitbook/Pictures/10000001000006EC00000C98F7005558292A8B45.png"
 style="width:10.273cm;height:18.692cm"
 alt="Figure 68: Initial Setup Guide Workflow" />
 <figcaption aria-hidden="true">Figure 68: Initial Setup Guide
@@ -3350,8 +3272,7 @@ Workflow</figcaption>
 </figure>
 
 <figure>
-<img
-src="gitbook/Pictures/Pictures/10000001000006A80000087847A6413CD622A034.png"
+<img src="gitbook/Pictures/10000001000006A80000087847A6413CD622A034.png"
 style="width:17.801cm;height:22.648cm"
 alt="Figure 69: Position Controller Tuning Workflow" />
 <figcaption aria-hidden="true">Figure 69: Position Controller Tuning
